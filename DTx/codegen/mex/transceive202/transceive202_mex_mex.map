@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		transceive202;
+		transceive202_initialize;
+		transceive202_terminate;
+		transceive202_atexit;
+	local:
+		*;
+};

@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		crossCorrXY;
+		crossCorrXY_initialize;
+		crossCorrXY_terminate;
+		crossCorrXY_atexit;
+	local:
+		*;
+};

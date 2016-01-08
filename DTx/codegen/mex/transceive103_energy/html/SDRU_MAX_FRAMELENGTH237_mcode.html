@@ -1,0 +1,20 @@
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="60,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T5U3">s</span> = SDRU_MAX_FRAMELENGTH()</span></span>
+<span class="srcline"><span class="lineno"><a href="60,2" id="srcline2"> 2</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="60,3" id="srcline3"> 3</a></span><span class="line"><span class="comment">%   Copyright 2014 The MathWorks, Inc.</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,4" id="srcline4"> 4</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="60,5" id="srcline5"> 5</a></span><span class="line"><span class="comment">%#codegen</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,6" id="srcline6"> 6</a></span><span class="line">    <span class="comment">% this is an arbitrary max required for MATLAB coder for outputs in</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,7" id="srcline7"> 7</a></span><span class="line">    <span class="comment">% ceval calls.</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,8" id="srcline8"> 8</a></span><span class="line">    <span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,9" id="srcline9"> 9</a></span><span class="line">    <span class="comment">% for SDR, we are upping the ante to 1024*366 -- i.e. 1K packets</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,10" id="srcline10">10</a></span><span class="line">    <span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,11" id="srcline11">11</a></span><span class="line">    <span class="comment">% The trade off is the memory footprint vs. max size.  If most folks </span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,12" id="srcline12">12</a></span><span class="line">    <span class="comment">% are using frame sizes &lt; 374784, we are wasting memory.</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,13" id="srcline13">13</a></span><span class="line">    <span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,14" id="srcline14">14</a></span><span class="line">    <span class="comment">% Okay<span class="keyword">...</span><span class="comment">That'll just be a funny max to the user...Just round it off to</span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,15" id="srcline15">15</a></span><span class="line">    <span class="comment">% something<span class="keyword">...</span></span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,16" id="srcline16">16</a></span><span class="line">    <span class="comment">%</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,17" id="srcline17">17</a></span><span class="line">    <span class="mxinfo " id="T5:U2"><span class="var type1" id="S2T5U8">s</span> = <span class="mxinfo " id="T5:U4">375000</span></span>; <span class="comment">% ~= 1024*366 = 1499136 bytes</span></span></span>
+<span class="srcline"><span class="lineno"><a href="60,18" id="srcline18">18</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>

@@ -1,0 +1,2329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="file:////usr/local/MATLAB/V40_testsuite/DTx/codegen/mex/transceive103_energy/html/index.css" />
+
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015b/toolbox/coder/coder/resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="file:////usr/local/MATLAB/R2015b/toolbox/rtw/rtw/+coder/+report/resources/rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarType: "Information for the selected variable:",
+    infoForVarConst: "Information for the selected compile-time constant:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t"
+};
+var functionInfoTable = {
+ MATLABcode1: "transceive103_energy1_mcode.html",
+ fpath1: "/usr/local/MATLAB/V40_testsuite/DTx/transceive103_energy.m",
+ lines1: [1, 1, 32],
+ watch1: "transceive103_energy1_watch.html",
+ title1: "Function: <span class='functionname'><a title='/usr/local/MATLAB/V40_testsuite/DTx/transceive103_energy.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/V40_testsuite/DTx/transceive103_energy.m')\">transceive103_energy</a></span>",
+ tcall1: [  ],
+ scall1: [ [ "From line 6 to SDRuTransmitter_SDRuTransmitter", "2#srcline0" ], [ "From line 11 to SDRuReceiver_SDRuReceiver", "163#srcline0" ], [ "From line 23 to SystemCore_release", "197#srcline0" ], [ "From line 25 to SystemCore_step", "198#srcline0" ] ],
+ MATLABcode2: "SDRuTransmitter_SDRuTransmitter2_mcode.html",
+ fpath2: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines2: [0, 0, 0],
+ watch2: "SDRuTransmitter_SDRuTransmitter2_watch.html",
+ title2: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_SDRuTransmitter</a></span>",
+ tcall2: [ [ "From transceive103_energy line 6", "1#F2N8:B45" ] ],
+ scall2: [  ],
+ MATLABcode3: "SDRuBase_SDRuBase3_mcode.html",
+ fpath3: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines3: [0, 0, 0],
+ watch3: "SDRuBase_SDRuBase3_watch.html",
+ title3: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_SDRuBase</a></span>",
+ tcall3: [  ],
+ scall3: [  ],
+ MATLABcode5: "SystemProp_SystemProp5_mcode.html",
+ fpath5: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines5: [0, 0, 0],
+ watch5: "SystemProp_SystemProp5_watch.html",
+ title5: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_SystemProp</a></span>",
+ tcall5: [  ],
+ scall5: [  ],
+ MATLABcode8: "SystemCore_SystemCore8_mcode.html",
+ fpath8: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines8: [0, 0, 0],
+ watch8: "SystemCore_SystemCore8_watch.html",
+ title8: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_SystemCore</a></span>",
+ tcall8: [  ],
+ scall8: [  ],
+ MATLABcode9: "SystemCore_checkCodeGenSupport9_mcode.html",
+ fpath9: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines9: [0, 0, 0],
+ watch9: "SystemCore_checkCodeGenSupport9_watch.html",
+ title9: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkCodeGenSupport &gt; 1</a></span>",
+ tcall9: [  ],
+ scall9: [  ],
+ MATLABcode11: "SystemProp_initializeTunablePropertyChanged11_mcode.html",
+ fpath11: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines11: [0, 0, 0],
+ watch11: "SystemProp_initializeTunablePropertyChanged11_watch.html",
+ title11: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_initializeTunablePropertyChanged</a></span>",
+ tcall11: [  ],
+ scall11: [  ],
+ MATLABcode87: "SystemProp_setProperties87_mcode.html",
+ fpath87: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines87: [0, 0, 0],
+ watch87: "SystemProp_setProperties87_watch.html",
+ title87: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_setProperties</a></span>",
+ tcall87: [  ],
+ scall87: [  ],
+ MATLABcode93: "SystemProp_parseInputs93_mcode.html",
+ fpath93: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines93: [0, 0, 0],
+ watch93: "SystemProp_parseInputs93_watch.html",
+ title93: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_parseInputs</a></span>",
+ tcall93: [  ],
+ scall93: [  ],
+ MATLABcode94: "pvParse94_mcode.html",
+ fpath94: "/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/pvParse.p",
+ lines94: [0, 0, 0],
+ watch94: "pvParse94_watch.html",
+ title94: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/pvParse.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/pvParse.p')\">pvParse &gt; 1</a></span>",
+ tcall94: [  ],
+ scall94: [  ],
+ MATLABcode95: "SystemProp_matlabCodegenNotifyAnyProp95_mcode.html",
+ fpath95: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines95: [0, 0, 0],
+ watch95: "SystemProp_matlabCodegenNotifyAnyProp95_watch.html",
+ title95: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_matlabCodegenNotifyAnyProp &gt; 1</a></span>",
+ tcall95: [  ],
+ scall95: [  ],
+ MATLABcode96: "SystemCore_isLockedAndNotReleased96_mcode.html",
+ fpath96: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines96: [0, 0, 0],
+ watch96: "SystemCore_isLockedAndNotReleased96_watch.html",
+ title96: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_isLockedAndNotReleased</a></span>",
+ tcall96: [  ],
+ scall96: [  ],
+ MATLABcode99: "SDRuBase_set46CenterFrequency99_mcode.html",
+ fpath99: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines99: [0, 0, 0],
+ watch99: "SDRuBase_set46CenterFrequency99_watch.html",
+ title99: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_set.CenterFrequency</a></span>",
+ tcall99: [  ],
+ scall99: [  ],
+ MATLABcode100: "SDRuBase_expandScalar100_mcode.html",
+ fpath100: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines100: [0, 0, 0],
+ watch100: "SDRuBase_expandScalar100_watch.html",
+ title100: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_expandScalar</a></span>",
+ tcall100: [  ],
+ scall100: [  ],
+ MATLABcode107: "SystemProp_matlabCodegenNotifyAnyProp107_mcode.html",
+ fpath107: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines107: [0, 0, 0],
+ watch107: "SystemProp_matlabCodegenNotifyAnyProp107_watch.html",
+ title107: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_matlabCodegenNotifyAnyProp &gt; 2</a></span>",
+ tcall107: [  ],
+ scall107: [  ],
+ MATLABcode110: "SDRuBase_set46Gain110_mcode.html",
+ fpath110: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines110: [0, 0, 0],
+ watch110: "SDRuBase_set46Gain110_watch.html",
+ title110: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_set.Gain</a></span>",
+ tcall110: [  ],
+ scall110: [  ],
+ MATLABcode111: "SystemProp_matlabCodegenNotifyAnyProp111_mcode.html",
+ fpath111: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines111: [0, 0, 0],
+ watch111: "SystemProp_matlabCodegenNotifyAnyProp111_watch.html",
+ title111: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_matlabCodegenNotifyAnyProp &gt; 3</a></span>",
+ tcall111: [  ],
+ scall111: [  ],
+ MATLABcode114: "SDRuTransmitter_set46InterpolationFactor114_mcode.html",
+ fpath114: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines114: [0, 0, 0],
+ watch114: "SDRuTransmitter_set46InterpolationFactor114_watch.html",
+ title114: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_set.InterpolationFactor</a></span>",
+ tcall114: [  ],
+ scall114: [  ],
+ MATLABcode118: "SDRuBase_set46IPAddress118_mcode.html",
+ fpath118: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines118: [0, 0, 0],
+ watch118: "SDRuBase_set46IPAddress118_watch.html",
+ title118: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_set.IPAddress</a></span>",
+ tcall118: [  ],
+ scall118: [  ],
+ MATLABcode119: "checkIPAddressFormat119_mcode.html",
+ fpath119: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m",
+ lines119: [1, 1, 51],
+ watch119: "checkIPAddressFormat119_watch.html",
+ title119: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m')\">checkIPAddressFormat</a></span>",
+ tcall119: [  ],
+ scall119: [ [ "From line 43 to checkIPAddressFormat > checkNumeric", "139#srcline51" ], [ "From line 44 to checkIPAddressFormat > checkNumeric", "139#srcline51" ], [ "From line 45 to checkIPAddressFormat > checkNumeric", "139#srcline51" ], [ "From line 46 to checkIPAddressFormat > checkNumeric", "139#srcline51" ] ],
+ MATLABcode139: "checkNumeric139_mcode.html",
+ fpath139: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m",
+ lines139: [50, 51, 56],
+ watch139: "checkNumeric139_watch.html",
+ title139: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m')\">checkIPAddressFormat &gt; checkNumeric</a></span>",
+ tcall139: [ [ "From checkIPAddressFormat line 43", "119#F139N4:B145" ], [ "From checkIPAddressFormat line 44", "119#F139N4:B152" ], [ "From checkIPAddressFormat line 45", "119#F139N4:B159" ], [ "From checkIPAddressFormat line 46", "119#F139N4:B166" ] ],
+ scall139: [  ],
+ MATLABcode159: "SystemProp_matlabCodegenNotifyAnyProp159_mcode.html",
+ fpath159: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines159: [0, 0, 0],
+ watch159: "SystemProp_matlabCodegenNotifyAnyProp159_watch.html",
+ title159: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_matlabCodegenNotifyAnyProp &gt; 4</a></span>",
+ tcall159: [  ],
+ scall159: [  ],
+ MATLABcode162: "SDRuBase_set46LocalOscillatorOffset162_mcode.html",
+ fpath162: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines162: [0, 0, 0],
+ watch162: "SDRuBase_set46LocalOscillatorOffset162_watch.html",
+ title162: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_set.LocalOscillatorOffset</a></span>",
+ tcall162: [  ],
+ scall162: [  ],
+ MATLABcode163: "SDRuReceiver_SDRuReceiver163_mcode.html",
+ fpath163: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p",
+ lines163: [0, 0, 0],
+ watch163: "SDRuReceiver_SDRuReceiver163_watch.html",
+ title163: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p')\">SDRuReceiver_SDRuReceiver</a></span>",
+ tcall163: [ [ "From transceive103_energy line 11", "1#F163N6:B67" ] ],
+ scall163: [  ],
+ MATLABcode164: "SDRuBase_SDRuBase164_mcode.html",
+ fpath164: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines164: [0, 0, 0],
+ watch164: "SDRuBase_SDRuBase164_watch.html",
+ title164: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_SDRuBase</a></span>",
+ tcall164: [  ],
+ scall164: [  ],
+ MATLABcode166: "SystemProp_SystemProp166_mcode.html",
+ fpath166: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines166: [0, 0, 0],
+ watch166: "SystemProp_SystemProp166_watch.html",
+ title166: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_SystemProp</a></span>",
+ tcall166: [  ],
+ scall166: [  ],
+ MATLABcode169: "SystemCore_SystemCore169_mcode.html",
+ fpath169: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines169: [0, 0, 0],
+ watch169: "SystemCore_SystemCore169_watch.html",
+ title169: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_SystemCore</a></span>",
+ tcall169: [  ],
+ scall169: [  ],
+ MATLABcode170: "SystemCore_checkCodeGenSupport170_mcode.html",
+ fpath170: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines170: [0, 0, 0],
+ watch170: "SystemCore_checkCodeGenSupport170_watch.html",
+ title170: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkCodeGenSupport &gt; 2</a></span>",
+ tcall170: [  ],
+ scall170: [  ],
+ MATLABcode172: "SystemProp_initializeTunablePropertyChanged172_mcode.html",
+ fpath172: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines172: [0, 0, 0],
+ watch172: "SystemProp_initializeTunablePropertyChanged172_watch.html",
+ title172: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_initializeTunablePropertyChanged</a></span>",
+ tcall172: [  ],
+ scall172: [  ],
+ MATLABcode178: "SystemProp_setProperties178_mcode.html",
+ fpath178: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines178: [0, 0, 0],
+ watch178: "SystemProp_setProperties178_watch.html",
+ title178: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_setProperties</a></span>",
+ tcall178: [  ],
+ scall178: [  ],
+ MATLABcode182: "SystemProp_parseInputs182_mcode.html",
+ fpath182: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines182: [0, 0, 0],
+ watch182: "SystemProp_parseInputs182_watch.html",
+ title182: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_parseInputs</a></span>",
+ tcall182: [  ],
+ scall182: [  ],
+ MATLABcode183: "pvParse183_mcode.html",
+ fpath183: "/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/pvParse.p",
+ lines183: [0, 0, 0],
+ watch183: "pvParse183_watch.html",
+ title183: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/pvParse.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/pvParse.p')\">pvParse &gt; 2</a></span>",
+ tcall183: [  ],
+ scall183: [  ],
+ MATLABcode184: "SystemProp_matlabCodegenNotifyAnyProp184_mcode.html",
+ fpath184: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines184: [0, 0, 0],
+ watch184: "SystemProp_matlabCodegenNotifyAnyProp184_watch.html",
+ title184: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_matlabCodegenNotifyAnyProp &gt; 5</a></span>",
+ tcall184: [  ],
+ scall184: [  ],
+ MATLABcode185: "SystemCore_isLockedAndNotReleased185_mcode.html",
+ fpath185: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines185: [0, 0, 0],
+ watch185: "SystemCore_isLockedAndNotReleased185_watch.html",
+ title185: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_isLockedAndNotReleased</a></span>",
+ tcall185: [  ],
+ scall185: [  ],
+ MATLABcode188: "SDRuBase_set46CenterFrequency188_mcode.html",
+ fpath188: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines188: [0, 0, 0],
+ watch188: "SDRuBase_set46CenterFrequency188_watch.html",
+ title188: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_set.CenterFrequency</a></span>",
+ tcall188: [  ],
+ scall188: [  ],
+ MATLABcode189: "SDRuBase_expandScalar189_mcode.html",
+ fpath189: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines189: [0, 0, 0],
+ watch189: "SDRuBase_expandScalar189_watch.html",
+ title189: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_expandScalar</a></span>",
+ tcall189: [  ],
+ scall189: [  ],
+ MATLABcode190: "SystemProp_matlabCodegenNotifyAnyProp190_mcode.html",
+ fpath190: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ lines190: [0, 0, 0],
+ watch190: "SystemProp_matlabCodegenNotifyAnyProp190_watch.html",
+ title190: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p')\">SystemProp_matlabCodegenNotifyAnyProp &gt; 6</a></span>",
+ tcall190: [  ],
+ scall190: [  ],
+ MATLABcode193: "SDRuReceiver_set46DecimationFactor193_mcode.html",
+ fpath193: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p",
+ lines193: [0, 0, 0],
+ watch193: "SDRuReceiver_set46DecimationFactor193_watch.html",
+ title193: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p')\">SDRuReceiver_set.DecimationFactor</a></span>",
+ tcall193: [  ],
+ scall193: [  ],
+ MATLABcode197: "SystemCore_release197_mcode.html",
+ fpath197: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines197: [0, 0, 0],
+ watch197: "SystemCore_release197_watch.html",
+ title197: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_release</a></span>",
+ tcall197: [ [ "From transceive103_energy line 23", "1#F197N65:B101" ] ],
+ scall197: [  ],
+ MATLABcode198: "SystemCore_step198_mcode.html",
+ fpath198: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines198: [0, 0, 0],
+ watch198: "SystemCore_step198_watch.html",
+ title198: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_step</a></span>",
+ tcall198: [ [ "From transceive103_energy line 25", "1#F198N66:B106" ] ],
+ scall198: [  ],
+ MATLABcode199: "SystemCore_setupAndReset199_mcode.html",
+ fpath199: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines199: [0, 0, 0],
+ watch199: "SystemCore_setupAndReset199_watch.html",
+ title199: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_setupAndReset</a></span>",
+ tcall199: [  ],
+ scall199: [  ],
+ MATLABcode200: "SystemCore_setup200_mcode.html",
+ fpath200: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines200: [0, 0, 0],
+ watch200: "SystemCore_setup200_watch.html",
+ title200: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_setup</a></span>",
+ tcall200: [  ],
+ scall200: [  ],
+ MATLABcode201: "SystemCore_checkInputs201_mcode.html",
+ fpath201: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines201: [0, 0, 0],
+ watch201: "SystemCore_checkInputs201_watch.html",
+ title201: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkInputs</a></span>",
+ tcall201: [  ],
+ scall201: [  ],
+ MATLABcode206: "SystemCore_checkInputSizes206_mcode.html",
+ fpath206: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines206: [0, 0, 0],
+ watch206: "SystemCore_checkInputSizes206_watch.html",
+ title206: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkInputSizes</a></span>",
+ tcall206: [  ],
+ scall206: [  ],
+ MATLABcode207: "SystemCore_checkNumArgs207_mcode.html",
+ fpath207: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines207: [0, 0, 0],
+ watch207: "SystemCore_checkNumArgs207_watch.html",
+ title207: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumArgs</a></span>",
+ tcall207: [  ],
+ scall207: [  ],
+ MATLABcode213: "SystemCore_isInputSizeLockedImpl213_mcode.html",
+ fpath213: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines213: [0, 0, 0],
+ watch213: "SystemCore_isInputSizeLockedImpl213_watch.html",
+ title213: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_isInputSizeLockedImpl</a></span>",
+ tcall213: [  ],
+ scall213: [  ],
+ MATLABcode214: "SystemCore_initializeInputSizes214_mcode.html",
+ fpath214: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines214: [0, 0, 0],
+ watch214: "SystemCore_initializeInputSizes214_watch.html",
+ title214: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_initializeInputSizes</a></span>",
+ tcall214: [  ],
+ scall214: [  ],
+ MATLABcode221: "SystemCore_validateProperties221_mcode.html",
+ fpath221: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines221: [0, 0, 0],
+ watch221: "SystemCore_validateProperties221_watch.html",
+ title221: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_validateProperties</a></span>",
+ tcall221: [  ],
+ scall221: [  ],
+ MATLABcode222: "SystemCore_validatePropertiesImpl222_mcode.html",
+ fpath222: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines222: [0, 0, 0],
+ watch222: "SystemCore_validatePropertiesImpl222_watch.html",
+ title222: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_validatePropertiesImpl</a></span>",
+ tcall222: [  ],
+ scall222: [  ],
+ MATLABcode223: "SystemCore_checkNumInputs223_mcode.html",
+ fpath223: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines223: [0, 0, 0],
+ watch223: "SystemCore_checkNumInputs223_watch.html",
+ title223: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumInputs</a></span>",
+ tcall223: [  ],
+ scall223: [  ],
+ MATLABcode224: "SystemCore_getNumInputs224_mcode.html",
+ fpath224: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines224: [0, 0, 0],
+ watch224: "SystemCore_getNumInputs224_watch.html",
+ title224: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_getNumInputs</a></span>",
+ tcall224: [  ],
+ scall224: [  ],
+ MATLABcode225: "SystemCore_checkNumArgs225_mcode.html",
+ fpath225: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines225: [0, 0, 0],
+ watch225: "SystemCore_checkNumArgs225_watch.html",
+ title225: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumArgs</a></span>",
+ tcall225: [  ],
+ scall225: [  ],
+ MATLABcode227: "SDRuTransmitter_getNumInputsImpl227_mcode.html",
+ fpath227: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines227: [0, 0, 0],
+ watch227: "SDRuTransmitter_getNumInputsImpl227_watch.html",
+ title227: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_getNumInputsImpl</a></span>",
+ tcall227: [  ],
+ scall227: [  ],
+ MATLABcode229: "SystemCore_getNumInOutForStepImplOrOutputImpl229_mcode.html",
+ fpath229: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines229: [0, 0, 0],
+ watch229: "SystemCore_getNumInOutForStepImplOrOutputImpl229_watch.html",
+ title229: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_getNumInOutForStepImplOrOutputImpl</a></span>",
+ tcall229: [  ],
+ scall229: [  ],
+ MATLABcode231: "SystemCore_checkNumArgs231_mcode.html",
+ fpath231: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines231: [0, 0, 0],
+ watch231: "SystemCore_checkNumArgs231_watch.html",
+ title231: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumArgs</a></span>",
+ tcall231: [  ],
+ scall231: [  ],
+ MATLABcode233: "SDRuTransmitter_validateInputsImpl233_mcode.html",
+ fpath233: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines233: [0, 0, 0],
+ watch233: "SDRuTransmitter_validateInputsImpl233_watch.html",
+ title233: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_validateInputsImpl</a></span>",
+ tcall233: [  ],
+ scall233: [  ],
+ MATLABcode237: "SDRU_MAX_FRAMELENGTH237_mcode.html",
+ fpath237: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/SDRU_MAX_FRAMELENGTH.m",
+ lines237: [1, 1, 19],
+ watch237: "SDRU_MAX_FRAMELENGTH237_watch.html",
+ title237: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/SDRU_MAX_FRAMELENGTH.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/SDRU_MAX_FRAMELENGTH.m')\">SDRU_MAX_FRAMELENGTH</a></span>",
+ tcall237: [ [ "From mapiPrivate > 1 line 26", "279#F237N2:B79" ], [ "From mapiPrivate > 2 line 26", "285#F237N2:B79" ], [ "From mapiPrivate > 3 line 26", "308#F237N2:B79" ] ],
+ scall237: [  ],
+ MATLABcode238: "SystemCore_checkNumArgs238_mcode.html",
+ fpath238: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines238: [0, 0, 0],
+ watch238: "SystemCore_checkNumArgs238_watch.html",
+ title238: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumArgs</a></span>",
+ tcall238: [  ],
+ scall238: [  ],
+ MATLABcode241: "SDRuBase_setupImpl241_mcode.html",
+ fpath241: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines241: [0, 0, 0],
+ watch241: "SDRuBase_setupImpl241_watch.html",
+ title241: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_setupImpl</a></span>",
+ tcall241: [  ],
+ scall241: [  ],
+ MATLABcode254: "SDRuTransmitter_setupImplLocal254_mcode.html",
+ fpath254: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines254: [0, 0, 0],
+ watch254: "SDRuTransmitter_setupImplLocal254_watch.html",
+ title254: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_setupImplLocal</a></span>",
+ tcall254: [  ],
+ scall254: [  ],
+ MATLABcode255: "SDRuTransmitter_determineInputDataType255_mcode.html",
+ fpath255: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines255: [0, 0, 0],
+ watch255: "SDRuTransmitter_determineInputDataType255_watch.html",
+ title255: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_determineInputDataType</a></span>",
+ tcall255: [  ],
+ scall255: [  ],
+ MATLABcode256: "SDRuBase_get46IPAddress256_mcode.html",
+ fpath256: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines256: [0, 0, 0],
+ watch256: "SDRuBase_get46IPAddress256_watch.html",
+ title256: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_get.IPAddress</a></span>",
+ tcall256: [  ],
+ scall256: [  ],
+ MATLABcode277: "SDRuBase_get46MasterClockRate277_mcode.html",
+ fpath277: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ lines277: [0, 0, 0],
+ watch277: "SDRuBase_get46MasterClockRate277_watch.html",
+ title277: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p')\">SDRuBase_get.MasterClockRate</a></span>",
+ tcall277: [  ],
+ scall277: [  ],
+ MATLABcode278: "openDataConnection278_mcode.html",
+ fpath278: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/openDataConnection.m",
+ lines278: [1, 1, 8],
+ watch278: "openDataConnection278_watch.html",
+ title278: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/openDataConnection.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/openDataConnection.m')\">openDataConnection</a></span>",
+ tcall278: [  ],
+ scall278: [ [ "From line 6 to mapiPrivate > 1", "279#srcline1" ] ],
+ MATLABcode279: "mapiPrivate279_mcode.html",
+ fpath279: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m",
+ lines279: [1, 1, 298],
+ watch279: "mapiPrivate279_watch.html",
+ title279: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m')\">mapiPrivate &gt; 1</a></span>",
+ tcall279: [ [ "From openDataConnection line 6", "278#F279N33:B24" ] ],
+ scall279: [ , , [ "From line 26 to SDRU_MAX_FRAMELENGTH", "237#srcline1" ] ],
+ MATLABcode284: "closeDataConnection284_mcode.html",
+ fpath284: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/closeDataConnection.m",
+ lines284: [1, 1, 8],
+ watch284: "closeDataConnection284_watch.html",
+ title284: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/closeDataConnection.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/closeDataConnection.m')\">closeDataConnection</a></span>",
+ tcall284: [  ],
+ scall284: [ [ "From line 6 to mapiPrivate > 2", "285#srcline1" ] ],
+ MATLABcode285: "mapiPrivate285_mcode.html",
+ fpath285: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m",
+ lines285: [1, 1, 298],
+ watch285: "mapiPrivate285_watch.html",
+ title285: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m')\">mapiPrivate &gt; 2</a></span>",
+ tcall285: [ [ "From closeDataConnection line 6", "284#F285N33:B14" ] ],
+ scall285: [ , , [ "From line 26 to SDRU_MAX_FRAMELENGTH", "237#srcline1" ] ],
+ MATLABcode288: "reportSDRuStatus288_mcode.html",
+ fpath288: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/reportSDRuStatus.m",
+ lines288: [1, 1, 111],
+ watch288: "reportSDRuStatus288_watch.html",
+ title288: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/reportSDRuStatus.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/reportSDRuStatus.m')\">reportSDRuStatus</a></span>",
+ tcall288: [  ],
+ scall288: [ [ "From line 41 to getSDRuDriverVersion", "307#srcline1" ] ],
+ MATLABcode307: "getSDRuDriverVersion307_mcode.html",
+ fpath307: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/getSDRuDriverVersion.m",
+ lines307: [1, 1, 20],
+ watch307: "getSDRuDriverVersion307_watch.html",
+ title307: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/getSDRuDriverVersion.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/getSDRuDriverVersion.m')\">getSDRuDriverVersion</a></span>",
+ tcall307: [ [ "From reportSDRuStatus line 41", "288#F307N30:B125" ] ],
+ scall307: [ [ "From line 17 to mapiPrivate > 3", "308#srcline1" ] ],
+ MATLABcode308: "mapiPrivate308_mcode.html",
+ fpath308: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m",
+ lines308: [1, 1, 298],
+ watch308: "mapiPrivate308_watch.html",
+ title308: "Function: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m')\">mapiPrivate &gt; 3</a></span>",
+ tcall308: [ [ "From getSDRuDriverVersion line 17", "307#F308N33:B15" ] ],
+ scall308: [ , , [ "From line 26 to SDRU_MAX_FRAMELENGTH", "237#srcline1" ] ],
+ MATLABcode316: "SystemCore_checkTunablePropChange316_mcode.html",
+ fpath316: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines316: [0, 0, 0],
+ watch316: "SystemCore_checkTunablePropChange316_watch.html",
+ title316: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkTunablePropChange</a></span>",
+ tcall316: [  ],
+ scall316: [  ],
+ MATLABcode317: "SystemCore_resetImpl317_mcode.html",
+ fpath317: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines317: [0, 0, 0],
+ watch317: "SystemCore_resetImpl317_watch.html",
+ title317: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_resetImpl</a></span>",
+ tcall317: [  ],
+ scall317: [  ],
+ MATLABcode318: "SystemCore_systemblock_prestep318_mcode.html",
+ fpath318: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines318: [0, 0, 0],
+ watch318: "SystemCore_systemblock_prestep318_watch.html",
+ title318: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_systemblock_prestep</a></span>",
+ tcall318: [  ],
+ scall318: [  ],
+ MATLABcode319: "SystemCore_checkTunableProps319_mcode.html",
+ fpath319: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines319: [0, 0, 0],
+ watch319: "SystemCore_checkTunableProps319_watch.html",
+ title319: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkTunableProps</a></span>",
+ tcall319: [  ],
+ scall319: [  ],
+ MATLABcode320: "SystemCore_checkNumArgs320_mcode.html",
+ fpath320: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines320: [0, 0, 0],
+ watch320: "SystemCore_checkNumArgs320_watch.html",
+ title320: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumArgs</a></span>",
+ tcall320: [  ],
+ scall320: [  ],
+ MATLABcode322: "SystemCore_detectInputSizeChange322_mcode.html",
+ fpath322: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines322: [0, 0, 0],
+ watch322: "SystemCore_detectInputSizeChange322_watch.html",
+ title322: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_detectInputSizeChange</a></span>",
+ tcall322: [  ],
+ scall322: [  ],
+ MATLABcode327: "SystemCore_processInputSizeChangeImpl327_mcode.html",
+ fpath327: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines327: [0, 0, 0],
+ watch327: "SystemCore_processInputSizeChangeImpl327_watch.html",
+ title327: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_processInputSizeChangeImpl</a></span>",
+ tcall327: [  ],
+ scall327: [  ],
+ MATLABcode328: "SystemCore_getNumOutputs328_mcode.html",
+ fpath328: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines328: [0, 0, 0],
+ watch328: "SystemCore_getNumOutputs328_watch.html",
+ title328: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_getNumOutputs</a></span>",
+ tcall328: [  ],
+ scall328: [  ],
+ MATLABcode329: "SystemCore_checkNumArgs329_mcode.html",
+ fpath329: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines329: [0, 0, 0],
+ watch329: "SystemCore_checkNumArgs329_watch.html",
+ title329: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumArgs</a></span>",
+ tcall329: [  ],
+ scall329: [  ],
+ MATLABcode331: "SDRuTransmitter_getNumOutputsImpl331_mcode.html",
+ fpath331: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines331: [0, 0, 0],
+ watch331: "SDRuTransmitter_getNumOutputsImpl331_watch.html",
+ title331: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_getNumOutputsImpl</a></span>",
+ tcall331: [  ],
+ scall331: [  ],
+ MATLABcode333: "SystemCore_checkStepImpl333_mcode.html",
+ fpath333: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines333: [0, 0, 0],
+ watch333: "SystemCore_checkStepImpl333_watch.html",
+ title333: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkStepImpl</a></span>",
+ tcall333: [  ],
+ scall333: [  ],
+ MATLABcode335: "SystemCore_checkNumArgsStepImplOrOutputImpl335_mcode.html",
+ fpath335: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ lines335: [0, 0, 0],
+ watch335: "SystemCore_checkNumArgsStepImplOrOutputImpl335_watch.html",
+ title335: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p')\">SystemCore_checkNumArgsStepImplOrOutputImpl</a></span>",
+ tcall335: [  ],
+ scall335: [  ],
+ MATLABcode338: "SDRuTransmitter_stepImpl338_mcode.html",
+ fpath338: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ lines338: [0, 0, 0],
+ watch338: "SDRuTransmitter_stepImpl338_watch.html",
+ title338: "Method: <span class='functionname'><a title='/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p' class='functionlink' href=\"matlab: open('/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p')\">SDRuTransmitter_stepImpl</a></span>",
+ tcall338: [  ],
+ scall338: [  ],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "/usr/local/MATLAB/V40_testsuite/DTx/codegen/mex/transceive103_energy/html/"
+};
+var scriptInfoTable = {
+ fpath1: "/usr/local/MATLAB/V40_testsuite/DTx/transceive103_energy.m",
+ fpath2: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p",
+ fpath3: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/+internal/SDRuBase.p",
+ fpath4: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/System.p",
+ fpath5: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemProp.p",
+ fpath6: "/usr/local/MATLAB/R2015b/toolbox/coder/coder/+coder/+internal/matlabCodegenHandle.p",
+ fpath7: "/usr/local/MATLAB/R2015b/toolbox/shared/system/coder/+matlab/+system/+coder/SystemCore.p",
+ fpath8: "/usr/local/MATLAB/R2015b/toolbox/shared/coder/coder/+coder/ExternalDependency.m",
+ fpath9: "/usr/local/MATLAB/R2015b/toolbox/shared/coder/coder/+coder/+internal/getHostName.m",
+ fpath10: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/randi.m",
+ fpath11: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/rand.m",
+ fpath12: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_is_rand_extrinsic.m",
+ fpath13: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_rand.m",
+ fpath14: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_rand_str2id.m",
+ fpath15: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_rand_mcg16807_stateful.m",
+ fpath16: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_rand_mcg16807.m",
+ fpath17: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_rand_shr3cong_stateful.m",
+ fpath18: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_rand_shr3cong.m",
+ fpath19: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/private/eml_rand_mt19937ar_stateful.m",
+ fpath20: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/randfun/eml_rand_mt19937ar.m",
+ fpath21: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/eps.m",
+ fpath22: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/private/eml_eps.m",
+ fpath23: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/floatModel.m",
+ fpath24: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/isequal.m",
+ fpath25: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/private/eml_isequal_core.m",
+ fpath26: "/usr/local/MATLAB/R2015b/toolbox/shared/coder/coder/+coder/+internal/narginchk.m",
+ fpath27: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elfun/floor.m",
+ fpath28: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/isBuiltInNumeric.m",
+ fpath29: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/applyScalarFunctionInPlace.m",
+ fpath30: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/+scalar/floor.m",
+ fpath31: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/isnan.m",
+ fpath32: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/indexPlus.m",
+ fpath33: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/error.m",
+ fpath34: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/strfun/char.m",
+ fpath35: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elfun/rem.m",
+ fpath36: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/scalarEg.m",
+ fpath37: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath38: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/fixedpoint/isfi.m",
+ fpath39: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/fixedpoint/isnumerictype.m",
+ fpath40: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath41: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath42: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/scalexpAlloc.m",
+ fpath43: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/scalexpAllocNoCheck.m",
+ fpath44: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/applyScalarFunction.m",
+ fpath45: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/+scalar/rem.m",
+ fpath46: "/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/isSystemObject.p",
+ fpath47: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/length.m",
+ fpath48: "/usr/local/MATLAB/R2015b/toolbox/matlab/system/+matlab/+system/pvParse.p",
+ fpath49: "/usr/local/MATLAB/R2015b/toolbox/shared/coder/coder/+coder/+internal/warning.m",
+ fpath50: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m",
+ fpath51: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/isrow.m",
+ fpath52: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/elmat/find.m",
+ fpath53: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/ops/any.m",
+ fpath54: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/allOrAny.m",
+ fpath55: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/constNonSingletonDim.m",
+ fpath56: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/prodsize.m",
+ fpath57: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/indexMinus.m",
+ fpath58: "/usr/local/MATLAB/R2015b/toolbox/eml/eml/+coder/+internal/indexTimes.m",
+ fpath59: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p",
+ fpath60: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/SDRU_MAX_FRAMELENGTH.m",
+ fpath61: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/ops/all.m",
+ fpath62: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/ops/power.m",
+ fpath63: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/datafun/sum.m",
+ fpath64: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/datafun/private/sumprod.m",
+ fpath65: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/datafun/private/process_sumprod_inputs.m",
+ fpath66: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/datafun/private/combine_vector_elements.m",
+ fpath67: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/openDataConnection.m",
+ fpath68: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/mapiPrivate.m",
+ fpath69: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/UsrpErrorCapiEnumT.m",
+ fpath70: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/closeDataConnection.m",
+ fpath71: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/reportSDRuStatus.m",
+ fpath72: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/strfun/strfind.m",
+ fpath73: "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/getSDRuDriverVersion.m",
+ fpath74: "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/lang/error.m"
+};
+</script>
+</head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="ccode"><span>C code</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1">0 x 0</option>
+<option value="308">1 x 0</option>
+<option value="1 119 237 278 279 284 285 288 307 308">1 x 1</option>
+<option value="288">1 x 10</option>
+<option value="1 119 278 288">1 x 12</option>
+<option value="279">1 x 13</option>
+<option value="1 278">1 x 15</option>
+<option value="279">1 x 16</option>
+<option value="1 279">1 x 18</option>
+<option value="285">1 x 19</option>
+<option value="285">1 x 2</option>
+<option value="279 308">1 x 20</option>
+<option value="285">1 x 21</option>
+<option value="308">1 x 22</option>
+<option value="288">1 x 26</option>
+<option value="288">1 x 28</option>
+<option value="279 308">1 x 3</option>
+<option value="288">1 x 35</option>
+<option value="1">1 x 4</option>
+<option value="119 139 279">1 x 9</option>
+<option value="119 139 278 279 284 285 288 307 308">1 x <b>:</b>?</option>
+<option value="1">1408 x 1</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="1">Complex values</option>
+<option value="1 119 139 237 278 279 284 285 308">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="278">BoardIdCapiEnumT</option>
+<option value="278">DataPortDataTypeCapiEnumT</option>
+<option value="278 279 284 285 288 307 308">UsrpErrorCapiEnumT</option>
+<option value="288">UsrpReportMethodEnumT</option>
+<option value="279 285 308">cell</option>
+<option value="1 119 139 278 279 284 285 288 307 308">char</option>
+<option value="279">coder.opaque</option>
+<option value="1">comm.SDRuTransmitter</option>
+<option value="1 119 237 278 279 285 308">double</option>
+<option value="139">int16</option>
+<option value="1 278 279 284 285 308">int32</option>
+<option value="1 119 278 279 285 308">logical</option>
+<option value="1">struct</option>
+<option value="1 279">uint32</option>
+<option value="278 279">uint8</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="node collapsed failed"><a class="classroot" title="matlab">matlab</a>
+<ul>
+<li class="node collapsed failed"><a class="classroot" id="F94N85:F12" title="matlab.system">system</a></li>
+</ul>
+</li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F237N2:F1">SDRU_MAX_FRAMELENGTH</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F119N3:F2">checkIPAddressFormat</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F139N4:F3">checkIPAddressFormat &gt; checkNumeric</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F284N5:F4">closeDataConnection</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F307N30:F5">getSDRuDriverVersion</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F279N33:F6">mapiPrivate &gt; 1</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F285N33:F7">mapiPrivate &gt; 2</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F308N33:F8">mapiPrivate &gt; 3</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F278N84:F9">openDataConnection</a></li>
+<li class="leaf  passed"><a href="#" class="fcn " id="F288N86:F10">reportSDRuStatus</a></li>
+<li class="leaf  failed"><a href="#" class="fcn " id="F1N90:F11">transceive103_energy</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+<ol class="callstacknode" id="callstacknode94">
+<li class="node collapsed"><a>.matlab.system</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn" id="F94N85:F13" title="pvParse&nbsp;>&nbsp;1">pvParse &gt; 1</a></li>
+<li class="leaf failed"><a href="#" class="fcn" id="F183N85:F14" title="pvParse&nbsp;>&nbsp;2">pvParse &gt; 2</a></li>
+</ul>
+</li>
+</ol>
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+<!-- Begin Class Tree -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="methodSetClick(event);">
+<a class="expanded">Classes</a>
+</div>
+<div id="classlistbody">
+<div class="classwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="classTreeClick(event);">
+<ol class="tree">
+<!-- Begin Class Tree Roots -->
+<li class="node collapsed failed"><a class="classroot" title="comm">comm</a>
+<ul>
+<li class="node collapsed failed"><a class="classroot" title="comm.SDRuReceiver">SDRuReceiver</a>
+<ul>
+<li class="node collapsed failed"><a class="classroot" id="F163N6:M71" title="comm.SDRuReceiver">SDRuReceiver.1</a></li>
+<li class="node collapsed failed"><a class="classroot" id="F193N7:M72" title="comm.SDRuReceiver">SDRuReceiver.2</a></li>
+</ul>
+</li>
+<li class="node collapsed failed"><a class="classroot" title="comm.SDRuTransmitter">SDRuTransmitter</a>
+<ul>
+<li class="node collapsed passed"><a class="classroot" id="F2N8:M73" title="comm.SDRuTransmitter">SDRuTransmitter.1</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F114N9:M74" title="comm.SDRuTransmitter">SDRuTransmitter.2</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F227N10:M75" title="comm.SDRuTransmitter">SDRuTransmitter.3</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F233N11:M76" title="comm.SDRuTransmitter">SDRuTransmitter.4</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F254N12:M77" title="comm.SDRuTransmitter">SDRuTransmitter.5</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F255N13:M78" title="comm.SDRuTransmitter">SDRuTransmitter.6</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F331N14:M79" title="comm.SDRuTransmitter">SDRuTransmitter.7</a></li>
+<li class="node collapsed failed"><a class="classroot" id="F338N15:M80" title="comm.SDRuTransmitter">SDRuTransmitter.8</a></li>
+</ul>
+</li>
+<li class="node collapsed failed"><a class="classroot" title="comm.internal">internal</a>
+<ul>
+<li class="node collapsed failed"><a class="classroot" title="comm.internal.SDRuBase">SDRuBase</a>
+<ul>
+<li class="node collapsed passed"><a class="classroot" id="F3N16:M81" title="comm.internal.SDRuBase">SDRuBase.1</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F241N17:M82" title="comm.internal.SDRuBase">SDRuBase.10</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F256N18:M83" title="comm.internal.SDRuBase">SDRuBase.11</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F277N19:M84" title="comm.internal.SDRuBase">SDRuBase.12</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F99N20:M85" title="comm.internal.SDRuBase">SDRuBase.2</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F100N21:M86" title="comm.internal.SDRuBase">SDRuBase.3</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F110N22:M87" title="comm.internal.SDRuBase">SDRuBase.4</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F118N23:M88" title="comm.internal.SDRuBase">SDRuBase.5</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F162N24:M89" title="comm.internal.SDRuBase">SDRuBase.6</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F188N25:M90" title="comm.internal.SDRuBase">SDRuBase.7</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F189N26:M91" title="comm.internal.SDRuBase">SDRuBase.8</a></li>
+<li class="node collapsed failed"><a class="classroot" id="F164N27:M92" title="comm.internal.SDRuBase">SDRuBase.9</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="node collapsed failed"><a class="classroot" title="matlab">matlab</a>
+<ul>
+<li class="node collapsed failed"><a class="classroot" title="matlab.system">system</a>
+<ul>
+<li class="node collapsed failed"><a class="classroot" title="matlab.system.coder">coder</a>
+<ul>
+<li class="node collapsed failed"><a class="classroot" title="matlab.system.coder.SystemCore">SystemCore</a>
+<ul>
+<li class="node collapsed passed"><a class="classroot" id="F8N38:M93" title="matlab.system.coder.SystemCore">SystemCore.1</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F206N39:M94" title="matlab.system.coder.SystemCore">SystemCore.10</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F207N40:M95" title="matlab.system.coder.SystemCore">SystemCore.11</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F213N41:M96" title="matlab.system.coder.SystemCore">SystemCore.12</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F214N42:M97" title="matlab.system.coder.SystemCore">SystemCore.13</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F221N43:M98" title="matlab.system.coder.SystemCore">SystemCore.14</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F222N44:M99" title="matlab.system.coder.SystemCore">SystemCore.15</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F223N45:M100" title="matlab.system.coder.SystemCore">SystemCore.16</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F224N46:M101" title="matlab.system.coder.SystemCore">SystemCore.17</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F225N47:M102" title="matlab.system.coder.SystemCore">SystemCore.18</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F229N48:M103" title="matlab.system.coder.SystemCore">SystemCore.19</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F96N49:M104" title="matlab.system.coder.SystemCore">SystemCore.2</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F231N50:M105" title="matlab.system.coder.SystemCore">SystemCore.20</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F238N51:M106" title="matlab.system.coder.SystemCore">SystemCore.21</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F316N52:M107" title="matlab.system.coder.SystemCore">SystemCore.22</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F317N53:M108" title="matlab.system.coder.SystemCore">SystemCore.23</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F318N54:M109" title="matlab.system.coder.SystemCore">SystemCore.24</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F319N55:M110" title="matlab.system.coder.SystemCore">SystemCore.25</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F320N56:M111" title="matlab.system.coder.SystemCore">SystemCore.26</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F322N57:M112" title="matlab.system.coder.SystemCore">SystemCore.27</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F327N58:M113" title="matlab.system.coder.SystemCore">SystemCore.28</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F328N59:M114" title="matlab.system.coder.SystemCore">SystemCore.29</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F169N60:M115" title="matlab.system.coder.SystemCore">SystemCore.3</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F329N61:M116" title="matlab.system.coder.SystemCore">SystemCore.30</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F333N62:M117" title="matlab.system.coder.SystemCore">SystemCore.31</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F335N63:M118" title="matlab.system.coder.SystemCore">SystemCore.32</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F185N64:M119" title="matlab.system.coder.SystemCore">SystemCore.4</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F197N65:M120" title="matlab.system.coder.SystemCore">SystemCore.5</a></li>
+<li class="node collapsed failed"><a class="classroot" id="F198N66:M121" title="matlab.system.coder.SystemCore">SystemCore.6</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F199N67:M122" title="matlab.system.coder.SystemCore">SystemCore.7</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F200N68:M123" title="matlab.system.coder.SystemCore">SystemCore.8</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F201N69:M124" title="matlab.system.coder.SystemCore">SystemCore.9</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F9N34:M1" title="matlab.system.coder.SystemCore.SystemCore_checkCodeGenSupport&nbsp;>&nbsp;1">SystemCore_checkCodeGenSupport &gt; 1</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F170N34:M2" title="matlab.system.coder.SystemCore.SystemCore_checkCodeGenSupport&nbsp;>&nbsp;2">SystemCore_checkCodeGenSupport &gt; 2</a></li>
+</ul>
+</li>
+<li class="node collapsed failed"><a class="classroot" title="matlab.system.coder.SystemProp">SystemProp</a>
+<ul>
+<li class="node collapsed passed"><a class="classroot" id="F5N74:M125" title="matlab.system.coder.SystemProp">SystemProp.1</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F11N75:M126" title="matlab.system.coder.SystemProp">SystemProp.2</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F87N76:M127" title="matlab.system.coder.SystemProp">SystemProp.3</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F93N77:M128" title="matlab.system.coder.SystemProp">SystemProp.4</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F166N78:M129" title="matlab.system.coder.SystemProp">SystemProp.5</a></li>
+<li class="node collapsed passed"><a class="classroot" id="F172N79:M130" title="matlab.system.coder.SystemProp">SystemProp.6</a></li>
+<li class="node collapsed failed"><a class="classroot" id="F178N80:M131" title="matlab.system.coder.SystemProp">SystemProp.7</a></li>
+<li class="node collapsed failed"><a class="classroot" id="F182N81:M132" title="matlab.system.coder.SystemProp">SystemProp.8</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F95N70:M3" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;1">SystemProp_matlabCodegenNotifyAnyProp &gt; 1</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F107N70:M4" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;2">SystemProp_matlabCodegenNotifyAnyProp &gt; 2</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F111N70:M5" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;3">SystemProp_matlabCodegenNotifyAnyProp &gt; 3</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F159N70:M6" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;4">SystemProp_matlabCodegenNotifyAnyProp &gt; 4</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F184N70:M7" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;5">SystemProp_matlabCodegenNotifyAnyProp &gt; 5</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F190N70:M8" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;6">SystemProp_matlabCodegenNotifyAnyProp &gt; 6</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<!-- End Class Tree Roots -->
+</ol>
+<!-- Class Tree Nodes -->
+<div class="classlistnodes hidden">
+<ol class="callstacknode" id="callstacknode2">
+<li class="node collapsed"><a>comm.SDRuTransmitter.1</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F2N8:m11" title="comm.SDRuTransmitter.SDRuTransmitter_SDRuTransmitter"><span class="default">SDRuTransmitter_SDRuTransmitter</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode3">
+<li class="node collapsed"><a>comm.internal.SDRuBase.1</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F3N16:m19" title="comm.internal.SDRuBase.SDRuBase_SDRuBase"><span class="default">SDRuBase_SDRuBase</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode5">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.1</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F5N74:m63" title="matlab.system.coder.SystemProp.SystemProp_SystemProp"><span class="default">SystemProp_SystemProp</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode8">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.1</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F8N38:m31" title="matlab.system.coder.SystemCore.SystemCore_SystemCore"><span class="default">SystemCore_SystemCore</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode11">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.2</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F11N75:m64" title="matlab.system.coder.SystemProp.SystemProp_initializeTunablePropertyChanged"><span class="default">SystemProp_initializeTunablePropertyChanged</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode87">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.3</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F87N76:m65" title="matlab.system.coder.SystemProp.SystemProp_setProperties"><span class="default">SystemProp_setProperties</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode93">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.4</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F93N77:m66" title="matlab.system.coder.SystemProp.SystemProp_parseInputs"><span class="default">SystemProp_parseInputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode96">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.2</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F96N49:m42" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode99">
+<li class="node collapsed"><a>comm.internal.SDRuBase.2</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F99N20:m23" title="comm.internal.SDRuBase.SDRuBase_set.CenterFrequency"><span class="default">SDRuBase_set.CenterFrequency</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode100">
+<li class="node collapsed"><a>comm.internal.SDRuBase.3</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F100N21:m24" title="comm.internal.SDRuBase.SDRuBase_expandScalar"><span class="default">SDRuBase_expandScalar</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode110">
+<li class="node collapsed"><a>comm.internal.SDRuBase.4</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F110N22:m25" title="comm.internal.SDRuBase.SDRuBase_set.Gain"><span class="default">SDRuBase_set.Gain</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode114">
+<li class="node collapsed"><a>comm.SDRuTransmitter.2</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F114N9:m12" title="comm.SDRuTransmitter.SDRuTransmitter_set.InterpolationFactor"><span class="default">SDRuTransmitter_set.InterpolationFactor</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode118">
+<li class="node collapsed"><a>comm.internal.SDRuBase.5</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F118N23:m26" title="comm.internal.SDRuBase.SDRuBase_set.IPAddress"><span class="default">SDRuBase_set.IPAddress</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode162">
+<li class="node collapsed"><a>comm.internal.SDRuBase.6</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F162N24:m27" title="comm.internal.SDRuBase.SDRuBase_set.LocalOscillatorOffset"><span class="default">SDRuBase_set.LocalOscillatorOffset</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode163">
+<li class="node collapsed"><a>comm.SDRuReceiver.1</a>
+<ul>
+<li class="leaf failed"><a href="#" class="fcn " id="F163N6:m9" title="comm.SDRuReceiver.SDRuReceiver_SDRuReceiver"><span class="default">SDRuReceiver_SDRuReceiver</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode164">
+<li class="node collapsed"><a>comm.internal.SDRuBase.9</a>
+<ul>
+<li class="leaf failed"><a href="#" class="fcn " id="F164N27:m30" title="comm.internal.SDRuBase.SDRuBase_SDRuBase"><span class="default">SDRuBase_SDRuBase</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode166">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.5</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F166N78:m67" title="matlab.system.coder.SystemProp.SystemProp_SystemProp"><span class="default">SystemProp_SystemProp</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode169">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.3</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F169N60:m53" title="matlab.system.coder.SystemCore.SystemCore_SystemCore"><span class="default">SystemCore_SystemCore</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode172">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.6</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F172N79:m68" title="matlab.system.coder.SystemProp.SystemProp_initializeTunablePropertyChanged"><span class="default">SystemProp_initializeTunablePropertyChanged</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode178">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.7</a>
+<ul>
+<li class="leaf failed"><a href="#" class="fcn " id="F178N80:m69" title="matlab.system.coder.SystemProp.SystemProp_setProperties"><span class="default">SystemProp_setProperties</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode182">
+<li class="node collapsed"><a>matlab.system.coder.SystemProp.8</a>
+<ul>
+<li class="leaf failed"><a href="#" class="fcn " id="F182N81:m70" title="matlab.system.coder.SystemProp.SystemProp_parseInputs"><span class="default">SystemProp_parseInputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode185">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.4</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F185N64:m57" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode188">
+<li class="node collapsed"><a>comm.internal.SDRuBase.7</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F188N25:m28" title="comm.internal.SDRuBase.SDRuBase_set.CenterFrequency"><span class="default">SDRuBase_set.CenterFrequency</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode189">
+<li class="node collapsed"><a>comm.internal.SDRuBase.8</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F189N26:m29" title="comm.internal.SDRuBase.SDRuBase_expandScalar"><span class="default">SDRuBase_expandScalar</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode193">
+<li class="node collapsed"><a>comm.SDRuReceiver.2</a>
+<ul>
+<li class="leaf failed"><a href="#" class="fcn " id="F193N7:m10" title="comm.SDRuReceiver.SDRuReceiver_set.DecimationFactor"><span class="default">SDRuReceiver_set.DecimationFactor</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode197">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.5</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F197N65:m58" title="matlab.system.coder.SystemCore.SystemCore_release"><span class="default">SystemCore_release</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode198">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.6</a>
+<ul>
+<li class="leaf failed"><a href="#" class="fcn " id="F198N66:m59" title="matlab.system.coder.SystemCore.SystemCore_step"><span class="default">SystemCore_step</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode199">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.7</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F199N67:m60" title="matlab.system.coder.SystemCore.SystemCore_setupAndReset"><span class="default">SystemCore_setupAndReset</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode200">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.8</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F200N68:m61" title="matlab.system.coder.SystemCore.SystemCore_setup"><span class="default">SystemCore_setup</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode201">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.9</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F201N69:m62" title="matlab.system.coder.SystemCore.SystemCore_checkInputs"><span class="default">SystemCore_checkInputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode206">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.10</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F206N39:m32" title="matlab.system.coder.SystemCore.SystemCore_checkInputSizes"><span class="default">SystemCore_checkInputSizes</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode207">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.11</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F207N40:m33" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode213">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.12</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F213N41:m34" title="matlab.system.coder.SystemCore.SystemCore_isInputSizeLockedImpl"><span class="default">SystemCore_isInputSizeLockedImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode214">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.13</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F214N42:m35" title="matlab.system.coder.SystemCore.SystemCore_initializeInputSizes"><span class="default">SystemCore_initializeInputSizes</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode221">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.14</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F221N43:m36" title="matlab.system.coder.SystemCore.SystemCore_validateProperties"><span class="default">SystemCore_validateProperties</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode222">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.15</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F222N44:m37" title="matlab.system.coder.SystemCore.SystemCore_validatePropertiesImpl"><span class="default">SystemCore_validatePropertiesImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode223">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.16</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F223N45:m38" title="matlab.system.coder.SystemCore.SystemCore_checkNumInputs"><span class="default">SystemCore_checkNumInputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode224">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.17</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F224N46:m39" title="matlab.system.coder.SystemCore.SystemCore_getNumInputs"><span class="default">SystemCore_getNumInputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode225">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.18</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F225N47:m40" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode227">
+<li class="node collapsed"><a>comm.SDRuTransmitter.3</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F227N10:m13" title="comm.SDRuTransmitter.SDRuTransmitter_getNumInputsImpl"><span class="default">SDRuTransmitter_getNumInputsImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode229">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.19</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F229N48:m41" title="matlab.system.coder.SystemCore.SystemCore_getNumInOutForStepImplOrOutputImpl"><span class="default">SystemCore_getNumInOutForStepImplOrOutputImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode231">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.20</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F231N50:m43" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode233">
+<li class="node collapsed"><a>comm.SDRuTransmitter.4</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F233N11:m14" title="comm.SDRuTransmitter.SDRuTransmitter_validateInputsImpl"><span class="default">SDRuTransmitter_validateInputsImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode238">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.21</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F238N51:m44" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode241">
+<li class="node collapsed"><a>comm.internal.SDRuBase.10</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F241N17:m20" title="comm.internal.SDRuBase.SDRuBase_setupImpl"><span class="default">SDRuBase_setupImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode254">
+<li class="node collapsed"><a>comm.SDRuTransmitter.5</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F254N12:m15" title="comm.SDRuTransmitter.SDRuTransmitter_setupImplLocal"><span class="default">SDRuTransmitter_setupImplLocal</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode255">
+<li class="node collapsed"><a>comm.SDRuTransmitter.6</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F255N13:m16" title="comm.SDRuTransmitter.SDRuTransmitter_determineInputDataType"><span class="default">SDRuTransmitter_determineInputDataType</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode256">
+<li class="node collapsed"><a>comm.internal.SDRuBase.11</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F256N18:m21" title="comm.internal.SDRuBase.SDRuBase_get.IPAddress"><span class="default">SDRuBase_get.IPAddress</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode277">
+<li class="node collapsed"><a>comm.internal.SDRuBase.12</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F277N19:m22" title="comm.internal.SDRuBase.SDRuBase_get.MasterClockRate"><span class="default">SDRuBase_get.MasterClockRate</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode316">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.22</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F316N52:m45" title="matlab.system.coder.SystemCore.SystemCore_checkTunablePropChange"><span class="default">SystemCore_checkTunablePropChange</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode317">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.23</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F317N53:m46" title="matlab.system.coder.SystemCore.SystemCore_resetImpl"><span class="default">SystemCore_resetImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode318">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.24</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F318N54:m47" title="matlab.system.coder.SystemCore.SystemCore_systemblock_prestep"><span class="default">SystemCore_systemblock_prestep</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode319">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.25</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F319N55:m48" title="matlab.system.coder.SystemCore.SystemCore_checkTunableProps"><span class="default">SystemCore_checkTunableProps</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode320">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.26</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F320N56:m49" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode322">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.27</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F322N57:m50" title="matlab.system.coder.SystemCore.SystemCore_detectInputSizeChange"><span class="default">SystemCore_detectInputSizeChange</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode327">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.28</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F327N58:m51" title="matlab.system.coder.SystemCore.SystemCore_processInputSizeChangeImpl"><span class="default">SystemCore_processInputSizeChangeImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode328">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.29</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F328N59:m52" title="matlab.system.coder.SystemCore.SystemCore_getNumOutputs"><span class="default">SystemCore_getNumOutputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode329">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.30</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F329N61:m54" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode331">
+<li class="node collapsed"><a>comm.SDRuTransmitter.7</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F331N14:m17" title="comm.SDRuTransmitter.SDRuTransmitter_getNumOutputsImpl"><span class="default">SDRuTransmitter_getNumOutputsImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode333">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.31</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F333N62:m55" title="matlab.system.coder.SystemCore.SystemCore_checkStepImpl"><span class="default">SystemCore_checkStepImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode335">
+<li class="node collapsed"><a>matlab.system.coder.SystemCore.32</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F335N63:m56" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgsStepImplOrOutputImpl"><span class="default">SystemCore_checkNumArgsStepImplOrOutputImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode338">
+<li class="node collapsed"><a>comm.SDRuTransmitter.8</a>
+<ul>
+<li class="leaf failed"><a href="#" class="fcn " id="F338N15:m18" title="comm.SDRuTransmitter.SDRuTransmitter_stepImpl"><span class="default">SDRuTransmitter_stepImpl</span></a></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<!-- End Class Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="node collapsed failed"><a href="#" class="fcn " id="F1N90:L1">transceive103_energy</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F2N8:L2" title="comm.SDRuTransmitter.SDRuTransmitter_SDRuTransmitter"><span class="default">SDRuTransmitter_SDRuTransmitter</span></a></li>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F163N6:L3" title="comm.SDRuReceiver.SDRuReceiver_SDRuReceiver"><span class="default">SDRuReceiver_SDRuReceiver</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F197N65:L4" title="matlab.system.coder.SystemCore.SystemCore_release"><span class="default">SystemCore_release</span></a></li>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F198N66:L5" title="matlab.system.coder.SystemCore.SystemCore_step"><span class="default">SystemCore_step</span></a></li>
+</ul>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="node collapsed failed"><a href="#" class="fcn " id="F1N90:l1">transceive103_energy</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F2N8:l2" title="comm.SDRuTransmitter.SDRuTransmitter_SDRuTransmitter"><span class="default">SDRuTransmitter_SDRuTransmitter</span></a></li>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F163N6:l3" title="comm.SDRuReceiver.SDRuReceiver_SDRuReceiver"><span class="default">SDRuReceiver_SDRuReceiver</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F197N65:l4" title="matlab.system.coder.SystemCore.SystemCore_release"><span class="default">SystemCore_release</span></a></li>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F198N66:l5" title="matlab.system.coder.SystemCore.SystemCore_step"><span class="default">SystemCore_step</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode2">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F2N8:l6" title="comm.SDRuTransmitter.SDRuTransmitter_SDRuTransmitter"><span class="default">SDRuTransmitter_SDRuTransmitter</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F3N16:l7" title="comm.internal.SDRuBase.SDRuBase_SDRuBase"><span class="default">SDRuBase_SDRuBase</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode3">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F3N16:l8" title="comm.internal.SDRuBase.SDRuBase_SDRuBase"><span class="default">SDRuBase_SDRuBase</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F87N76:l9" title="matlab.system.coder.SystemProp.SystemProp_setProperties"><span class="default">SystemProp_setProperties</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode5">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F5N74:l10" title="matlab.system.coder.SystemProp.SystemProp_SystemProp"><span class="default">SystemProp_SystemProp</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode8">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F8N38:l11" title="matlab.system.coder.SystemCore.SystemCore_SystemCore"><span class="default">SystemCore_SystemCore</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F9N34:l12" title="matlab.system.coder.SystemCore.SystemCore_checkCodeGenSupport&nbsp;>&nbsp;1"><span class="default">SystemCore_checkCodeGenSupport &gt; 1</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F11N75:l13" title="matlab.system.coder.SystemProp.SystemProp_initializeTunablePropertyChanged"><span class="default">SystemProp_initializeTunablePropertyChanged</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode9">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F9N34:l14" title="matlab.system.coder.SystemCore.SystemCore_checkCodeGenSupport&nbsp;>&nbsp;1"><span class="default">SystemCore_checkCodeGenSupport &gt; 1</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode11">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F11N75:l15" title="matlab.system.coder.SystemProp.SystemProp_initializeTunablePropertyChanged"><span class="default">SystemProp_initializeTunablePropertyChanged</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode87">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F87N76:l16" title="matlab.system.coder.SystemProp.SystemProp_setProperties"><span class="default">SystemProp_setProperties</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F93N77:l17" title="matlab.system.coder.SystemProp.SystemProp_parseInputs"><span class="default">SystemProp_parseInputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode93">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F93N77:l18" title="matlab.system.coder.SystemProp.SystemProp_parseInputs"><span class="default">SystemProp_parseInputs</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F94N85:l19" title="pvParse&nbsp;>&nbsp;1">pvParse &gt; 1</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode94">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F94N85:l20" title="pvParse&nbsp;>&nbsp;1">pvParse &gt; 1</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F95N70:l21" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;1"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 1</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F99N20:l22" title="comm.internal.SDRuBase.SDRuBase_set.CenterFrequency"><span class="default">SDRuBase_set.CenterFrequency</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F107N70:l23" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;2"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 2</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F110N22:l24" title="comm.internal.SDRuBase.SDRuBase_set.Gain"><span class="default">SDRuBase_set.Gain</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F111N70:l25" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;3"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 3</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F114N9:l26" title="comm.SDRuTransmitter.SDRuTransmitter_set.InterpolationFactor"><span class="default">SDRuTransmitter_set.InterpolationFactor</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F118N23:l27" title="comm.internal.SDRuBase.SDRuBase_set.IPAddress"><span class="default">SDRuBase_set.IPAddress</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F159N70:l28" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;4"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 4</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F162N24:l29" title="comm.internal.SDRuBase.SDRuBase_set.LocalOscillatorOffset"><span class="default">SDRuBase_set.LocalOscillatorOffset</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode95">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F95N70:l30" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;1"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 1</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F96N49:l31" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode96">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F96N49:l32" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode99">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F99N20:l33" title="comm.internal.SDRuBase.SDRuBase_set.CenterFrequency"><span class="default">SDRuBase_set.CenterFrequency</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F100N21:l34" title="comm.internal.SDRuBase.SDRuBase_expandScalar"><span class="default">SDRuBase_expandScalar</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode100">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F100N21:l35" title="comm.internal.SDRuBase.SDRuBase_expandScalar"><span class="default">SDRuBase_expandScalar</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode107">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F107N70:l36" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;2"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 2</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F96N49:l37" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode110">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F110N22:l38" title="comm.internal.SDRuBase.SDRuBase_set.Gain"><span class="default">SDRuBase_set.Gain</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F100N21:l39" title="comm.internal.SDRuBase.SDRuBase_expandScalar"><span class="default">SDRuBase_expandScalar</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode111">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F111N70:l40" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;3"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 3</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F96N49:l41" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode114">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F114N9:l42" title="comm.SDRuTransmitter.SDRuTransmitter_set.InterpolationFactor"><span class="default">SDRuTransmitter_set.InterpolationFactor</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode118">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F118N23:l43" title="comm.internal.SDRuBase.SDRuBase_set.IPAddress"><span class="default">SDRuBase_set.IPAddress</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F119N3:l44">checkIPAddressFormat</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode119">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F119N3:l45">checkIPAddressFormat</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F139N4:l46">checkIPAddressFormat &gt; checkNumeric</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode139">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F139N4:l47">checkIPAddressFormat &gt; checkNumeric</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode159">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F159N70:l48" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;4"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 4</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F96N49:l49" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode162">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F162N24:l50" title="comm.internal.SDRuBase.SDRuBase_set.LocalOscillatorOffset"><span class="default">SDRuBase_set.LocalOscillatorOffset</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode163">
+
+<li class="node collapsed failed"><a href="#" class="fcn " id="F163N6:l51" title="comm.SDRuReceiver.SDRuReceiver_SDRuReceiver"><span class="default">SDRuReceiver_SDRuReceiver</span></a>
+<ul>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F164N27:l52" title="comm.internal.SDRuBase.SDRuBase_SDRuBase"><span class="default">SDRuBase_SDRuBase</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode164">
+
+<li class="node collapsed failed"><a href="#" class="fcn " id="F164N27:l53" title="comm.internal.SDRuBase.SDRuBase_SDRuBase"><span class="default">SDRuBase_SDRuBase</span></a>
+<ul>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F178N80:l54" title="matlab.system.coder.SystemProp.SystemProp_setProperties"><span class="default">SystemProp_setProperties</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode166">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F166N78:l55" title="matlab.system.coder.SystemProp.SystemProp_SystemProp"><span class="default">SystemProp_SystemProp</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode169">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F169N60:l56" title="matlab.system.coder.SystemCore.SystemCore_SystemCore"><span class="default">SystemCore_SystemCore</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F170N34:l57" title="matlab.system.coder.SystemCore.SystemCore_checkCodeGenSupport&nbsp;>&nbsp;2"><span class="default">SystemCore_checkCodeGenSupport &gt; 2</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F172N79:l58" title="matlab.system.coder.SystemProp.SystemProp_initializeTunablePropertyChanged"><span class="default">SystemProp_initializeTunablePropertyChanged</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode170">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F170N34:l59" title="matlab.system.coder.SystemCore.SystemCore_checkCodeGenSupport&nbsp;>&nbsp;2"><span class="default">SystemCore_checkCodeGenSupport &gt; 2</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode172">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F172N79:l60" title="matlab.system.coder.SystemProp.SystemProp_initializeTunablePropertyChanged"><span class="default">SystemProp_initializeTunablePropertyChanged</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode178">
+
+<li class="node collapsed failed"><a href="#" class="fcn " id="F178N80:l61" title="matlab.system.coder.SystemProp.SystemProp_setProperties"><span class="default">SystemProp_setProperties</span></a>
+<ul>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F182N81:l62" title="matlab.system.coder.SystemProp.SystemProp_parseInputs"><span class="default">SystemProp_parseInputs</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode182">
+
+<li class="node collapsed failed"><a href="#" class="fcn " id="F182N81:l63" title="matlab.system.coder.SystemProp.SystemProp_parseInputs"><span class="default">SystemProp_parseInputs</span></a>
+<ul>
+<li class="node collapsed failed"><a href="#" class="fcn " id="F183N85:l64" title="pvParse&nbsp;>&nbsp;2">pvParse &gt; 2</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode183">
+
+<li class="node collapsed failed"><a href="#" class="fcn " id="F183N85:l65" title="pvParse&nbsp;>&nbsp;2">pvParse &gt; 2</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F184N70:l66" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;5"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 5</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F188N25:l67" title="comm.internal.SDRuBase.SDRuBase_set.CenterFrequency"><span class="default">SDRuBase_set.CenterFrequency</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F190N70:l68" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;6"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 6</span></a></li>
+<li class="leaf failed"><a href="#" class="fcn " id="F193N7:l69" title="comm.SDRuReceiver.SDRuReceiver_set.DecimationFactor"><span class="default">SDRuReceiver_set.DecimationFactor</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode184">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F184N70:l70" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;5"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 5</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F185N64:l71" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode185">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F185N64:l72" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode188">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F188N25:l73" title="comm.internal.SDRuBase.SDRuBase_set.CenterFrequency"><span class="default">SDRuBase_set.CenterFrequency</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F189N26:l74" title="comm.internal.SDRuBase.SDRuBase_expandScalar"><span class="default">SDRuBase_expandScalar</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode189">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F189N26:l75" title="comm.internal.SDRuBase.SDRuBase_expandScalar"><span class="default">SDRuBase_expandScalar</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode190">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F190N70:l76" title="matlab.system.coder.SystemProp.SystemProp_matlabCodegenNotifyAnyProp&nbsp;>&nbsp;6"><span class="default">SystemProp_matlabCodegenNotifyAnyProp &gt; 6</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F185N64:l77" title="matlab.system.coder.SystemCore.SystemCore_isLockedAndNotReleased"><span class="default">SystemCore_isLockedAndNotReleased</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode193">
+
+<li class="leaf failed"><a href="#" class="fcn " id="F193N7:l78" title="comm.SDRuReceiver.SDRuReceiver_set.DecimationFactor"><span class="default">SDRuReceiver_set.DecimationFactor</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode197">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F197N65:l79" title="matlab.system.coder.SystemCore.SystemCore_release"><span class="default">SystemCore_release</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode198">
+
+<li class="node collapsed failed"><a href="#" class="fcn " id="F198N66:l80" title="matlab.system.coder.SystemCore.SystemCore_step"><span class="default">SystemCore_step</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F199N67:l81" title="matlab.system.coder.SystemCore.SystemCore_setupAndReset"><span class="default">SystemCore_setupAndReset</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F318N54:l82" title="matlab.system.coder.SystemCore.SystemCore_systemblock_prestep"><span class="default">SystemCore_systemblock_prestep</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F319N55:l83" title="matlab.system.coder.SystemCore.SystemCore_checkTunableProps"><span class="default">SystemCore_checkTunableProps</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F224N46:l84" title="matlab.system.coder.SystemCore.SystemCore_getNumInputs"><span class="default">SystemCore_getNumInputs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F320N56:l85" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F322N57:l86" title="matlab.system.coder.SystemCore.SystemCore_detectInputSizeChange"><span class="default">SystemCore_detectInputSizeChange</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F233N11:l87" title="comm.SDRuTransmitter.SDRuTransmitter_validateInputsImpl"><span class="default">SDRuTransmitter_validateInputsImpl</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F327N58:l88" title="matlab.system.coder.SystemCore.SystemCore_processInputSizeChangeImpl"><span class="default">SystemCore_processInputSizeChangeImpl</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F328N59:l89" title="matlab.system.coder.SystemCore.SystemCore_getNumOutputs"><span class="default">SystemCore_getNumOutputs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F229N48:l90" title="matlab.system.coder.SystemCore.SystemCore_getNumInOutForStepImplOrOutputImpl"><span class="default">SystemCore_getNumInOutForStepImplOrOutputImpl</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F333N62:l91" title="matlab.system.coder.SystemCore.SystemCore_checkStepImpl"><span class="default">SystemCore_checkStepImpl</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F335N63:l92" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgsStepImplOrOutputImpl"><span class="default">SystemCore_checkNumArgsStepImplOrOutputImpl</span></a></li>
+<li class="leaf failed"><a href="#" class="fcn " id="F338N15:l93" title="comm.SDRuTransmitter.SDRuTransmitter_stepImpl"><span class="default">SDRuTransmitter_stepImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode199">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F199N67:l94" title="matlab.system.coder.SystemCore.SystemCore_setupAndReset"><span class="default">SystemCore_setupAndReset</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F200N68:l95" title="matlab.system.coder.SystemCore.SystemCore_setup"><span class="default">SystemCore_setup</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F317N53:l96" title="matlab.system.coder.SystemCore.SystemCore_resetImpl"><span class="default">SystemCore_resetImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode200">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F200N68:l97" title="matlab.system.coder.SystemCore.SystemCore_setup"><span class="default">SystemCore_setup</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F201N69:l98" title="matlab.system.coder.SystemCore.SystemCore_checkInputs"><span class="default">SystemCore_checkInputs</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F206N39:l99" title="matlab.system.coder.SystemCore.SystemCore_checkInputSizes"><span class="default">SystemCore_checkInputSizes</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F214N42:l100" title="matlab.system.coder.SystemCore.SystemCore_initializeInputSizes"><span class="default">SystemCore_initializeInputSizes</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F221N43:l101" title="matlab.system.coder.SystemCore.SystemCore_validateProperties"><span class="default">SystemCore_validateProperties</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F223N45:l102" title="matlab.system.coder.SystemCore.SystemCore_checkNumInputs"><span class="default">SystemCore_checkNumInputs</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F224N46:l103" title="matlab.system.coder.SystemCore.SystemCore_getNumInputs"><span class="default">SystemCore_getNumInputs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F231N50:l104" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F233N11:l105" title="comm.SDRuTransmitter.SDRuTransmitter_validateInputsImpl"><span class="default">SDRuTransmitter_validateInputsImpl</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F238N51:l106" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F241N17:l107" title="comm.internal.SDRuBase.SDRuBase_setupImpl"><span class="default">SDRuBase_setupImpl</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F316N52:l108" title="matlab.system.coder.SystemCore.SystemCore_checkTunablePropChange"><span class="default">SystemCore_checkTunablePropChange</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode201">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F201N69:l109" title="matlab.system.coder.SystemCore.SystemCore_checkInputs"><span class="default">SystemCore_checkInputs</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode206">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F206N39:l110" title="matlab.system.coder.SystemCore.SystemCore_checkInputSizes"><span class="default">SystemCore_checkInputSizes</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F207N40:l111" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F213N41:l112" title="matlab.system.coder.SystemCore.SystemCore_isInputSizeLockedImpl"><span class="default">SystemCore_isInputSizeLockedImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode207">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F207N40:l113" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode213">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F213N41:l114" title="matlab.system.coder.SystemCore.SystemCore_isInputSizeLockedImpl"><span class="default">SystemCore_isInputSizeLockedImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode214">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F214N42:l115" title="matlab.system.coder.SystemCore.SystemCore_initializeInputSizes"><span class="default">SystemCore_initializeInputSizes</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode221">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F221N43:l116" title="matlab.system.coder.SystemCore.SystemCore_validateProperties"><span class="default">SystemCore_validateProperties</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F222N44:l117" title="matlab.system.coder.SystemCore.SystemCore_validatePropertiesImpl"><span class="default">SystemCore_validatePropertiesImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode222">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F222N44:l118" title="matlab.system.coder.SystemCore.SystemCore_validatePropertiesImpl"><span class="default">SystemCore_validatePropertiesImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode223">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F223N45:l119" title="matlab.system.coder.SystemCore.SystemCore_checkNumInputs"><span class="default">SystemCore_checkNumInputs</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F224N46:l120" title="matlab.system.coder.SystemCore.SystemCore_getNumInputs"><span class="default">SystemCore_getNumInputs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F229N48:l121" title="matlab.system.coder.SystemCore.SystemCore_getNumInOutForStepImplOrOutputImpl"><span class="default">SystemCore_getNumInOutForStepImplOrOutputImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode224">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F224N46:l122" title="matlab.system.coder.SystemCore.SystemCore_getNumInputs"><span class="default">SystemCore_getNumInputs</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F225N47:l123" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F227N10:l124" title="comm.SDRuTransmitter.SDRuTransmitter_getNumInputsImpl"><span class="default">SDRuTransmitter_getNumInputsImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode225">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F225N47:l125" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode227">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F227N10:l126" title="comm.SDRuTransmitter.SDRuTransmitter_getNumInputsImpl"><span class="default">SDRuTransmitter_getNumInputsImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode229">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F229N48:l127" title="matlab.system.coder.SystemCore.SystemCore_getNumInOutForStepImplOrOutputImpl"><span class="default">SystemCore_getNumInOutForStepImplOrOutputImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode231">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F231N50:l128" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode233">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F233N11:l129" title="comm.SDRuTransmitter.SDRuTransmitter_validateInputsImpl"><span class="default">SDRuTransmitter_validateInputsImpl</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F237N2:l130">SDRU_MAX_FRAMELENGTH</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode237">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F237N2:l131">SDRU_MAX_FRAMELENGTH</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode238">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F238N51:l132" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode241">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F241N17:l133" title="comm.internal.SDRuBase.SDRuBase_setupImpl"><span class="default">SDRuBase_setupImpl</span></a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F254N12:l134" title="comm.SDRuTransmitter.SDRuTransmitter_setupImplLocal"><span class="default">SDRuTransmitter_setupImplLocal</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F284N5:l135">closeDataConnection</a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F256N18:l136" title="comm.internal.SDRuBase.SDRuBase_get.IPAddress"><span class="default">SDRuBase_get.IPAddress</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F288N86:l137">reportSDRuStatus</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode254">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F254N12:l138" title="comm.SDRuTransmitter.SDRuTransmitter_setupImplLocal"><span class="default">SDRuTransmitter_setupImplLocal</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F255N13:l139" title="comm.SDRuTransmitter.SDRuTransmitter_determineInputDataType"><span class="default">SDRuTransmitter_determineInputDataType</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F256N18:l140" title="comm.internal.SDRuBase.SDRuBase_get.IPAddress"><span class="default">SDRuBase_get.IPAddress</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F277N19:l141" title="comm.internal.SDRuBase.SDRuBase_get.MasterClockRate"><span class="default">SDRuBase_get.MasterClockRate</span></a></li>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F278N84:l142">openDataConnection</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode255">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F255N13:l143" title="comm.SDRuTransmitter.SDRuTransmitter_determineInputDataType"><span class="default">SDRuTransmitter_determineInputDataType</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode256">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F256N18:l144" title="comm.internal.SDRuBase.SDRuBase_get.IPAddress"><span class="default">SDRuBase_get.IPAddress</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode277">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F277N19:l145" title="comm.internal.SDRuBase.SDRuBase_get.MasterClockRate"><span class="default">SDRuBase_get.MasterClockRate</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode278">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F278N84:l146">openDataConnection</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F279N33:l147">mapiPrivate &gt; 1</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode279">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F279N33:l148">mapiPrivate &gt; 1</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F237N2:l149">SDRU_MAX_FRAMELENGTH</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode284">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F284N5:l150">closeDataConnection</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F285N33:l151">mapiPrivate &gt; 2</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode285">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F285N33:l152">mapiPrivate &gt; 2</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F237N2:l153">SDRU_MAX_FRAMELENGTH</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode288">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F288N86:l154">reportSDRuStatus</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F307N30:l155">getSDRuDriverVersion</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode307">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F307N30:l156">getSDRuDriverVersion</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn " id="F308N33:l157">mapiPrivate &gt; 3</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode308">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F308N33:l158">mapiPrivate &gt; 3</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F237N2:l159">SDRU_MAX_FRAMELENGTH</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode316">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F316N52:l160" title="matlab.system.coder.SystemCore.SystemCore_checkTunablePropChange"><span class="default">SystemCore_checkTunablePropChange</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode317">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F317N53:l161" title="matlab.system.coder.SystemCore.SystemCore_resetImpl"><span class="default">SystemCore_resetImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode318">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F318N54:l162" title="matlab.system.coder.SystemCore.SystemCore_systemblock_prestep"><span class="default">SystemCore_systemblock_prestep</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode319">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F319N55:l163" title="matlab.system.coder.SystemCore.SystemCore_checkTunableProps"><span class="default">SystemCore_checkTunableProps</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode320">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F320N56:l164" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode322">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F322N57:l165" title="matlab.system.coder.SystemCore.SystemCore_detectInputSizeChange"><span class="default">SystemCore_detectInputSizeChange</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode327">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F327N58:l166" title="matlab.system.coder.SystemCore.SystemCore_processInputSizeChangeImpl"><span class="default">SystemCore_processInputSizeChangeImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode328">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F328N59:l167" title="matlab.system.coder.SystemCore.SystemCore_getNumOutputs"><span class="default">SystemCore_getNumOutputs</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F329N61:l168" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a></li>
+<li class="leaf passed"><a href="#" class="fcn " id="F331N14:l169" title="comm.SDRuTransmitter.SDRuTransmitter_getNumOutputsImpl"><span class="default">SDRuTransmitter_getNumOutputsImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode329">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F329N61:l170" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgs"><span class="default">SystemCore_checkNumArgs</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode331">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F331N14:l171" title="comm.SDRuTransmitter.SDRuTransmitter_getNumOutputsImpl"><span class="default">SDRuTransmitter_getNumOutputsImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode333">
+
+<li class="leaf passed"><a href="#" class="fcn " id="F333N62:l172" title="matlab.system.coder.SystemCore.SystemCore_checkStepImpl"><span class="default">SystemCore_checkStepImpl</span></a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode335">
+
+<li class="node collapsed passed"><a href="#" class="fcn " id="F335N63:l173" title="matlab.system.coder.SystemCore.SystemCore_checkNumArgsStepImplOrOutputImpl"><span class="default">SystemCore_checkNumArgsStepImplOrOutputImpl</span></a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn " id="F229N48:l174" title="matlab.system.coder.SystemCore.SystemCore_getNumInOutForStepImplOrOutputImpl"><span class="default">SystemCore_getNumInOutForStepImplOrOutputImpl</span></a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode338">
+
+<li class="leaf failed"><a href="#" class="fcn " id="F338N15:l175" title="comm.SDRuTransmitter.SDRuTransmitter_stepImpl"><span class="default">SDRuTransmitter_stepImpl</span></a>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+<!-- Begin C Code -->
+<div id="ccodebody" class="ui-tabs-panel hidden">
+</div>
+<!-- End C Code -->
+</div>
+<!-- Tooltips -->
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td>1408 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>Yes</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>comm.SDRuTransmitter</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>1 x 15</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>1 x 18</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td>1 x 24</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>1 x 19</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td>1 x 10</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td>1 x 16</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>1 x 8</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>1 x 13</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>uint32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>625 x 1</td></tr><tr><th>Class</th><td>uint32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT32"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT33"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT34"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT35"><table class="tooltip"><tr><th>Size</th><td>1 x 37</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT36"><table class="tooltip"><tr><th>Size</th><td>1 x 10</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT37"><table class="tooltip"><tr><th>Size</th><td>10 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT38"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT39"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT40"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT41"><table class="tooltip"><tr><th>Size</th><td>1 x 43</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT42"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT43"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT44"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT45"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>int16</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT46"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT47"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT48"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT49"><table class="tooltip"><tr><th>Size</th><td>0 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT50"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT51"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT52"><table class="tooltip"><tr><th>Size</th><td>1 x 0</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT53"><table class="tooltip"><tr><th>Size</th><td>1 x 39</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT54"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT55"><table class="tooltip"><tr><th>Size</th><td>1 x 14</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT56"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT57"><table class="tooltip"><tr><th>Size</th><td>1 x 31</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT58"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT59"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>UsrpErrorCapiEnumT</td></tr></table></div>
+<div class="tooltip" id="TT60"><table class="tooltip"><tr><th>Size</th><td>1 x 12</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT61"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>BoardIdCapiEnumT</td></tr></table></div>
+<div class="tooltip" id="TT62"><table class="tooltip"><tr><th>Size</th><td>1 x 15</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT63"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>DataPortDataTypeCapiEnumT</td></tr></table></div>
+<div class="tooltip" id="TT64"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT65"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT66"><table class="tooltip"><tr><th>Size</th><td>1 x 1024</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT67"><table class="tooltip"><tr><th>Size</th><td>1 x 20</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT68"><table class="tooltip"><tr><th>Size</th><td>1 x 13</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT69"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT70"><table class="tooltip"><tr><th>Size</th><td>1 x 16</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT71"><table class="tooltip"><tr><th>Size</th><td>1 x 1024</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT72"><table class="tooltip"><tr><th>Size</th><td>1 x 21</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT73"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>UsrpReportMethodEnumT</td></tr></table></div>
+<div class="tooltip" id="TT74"><table class="tooltip"><tr><th>Size</th><td>1 x 35</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT75"><table class="tooltip"><tr><th>Size</th><td>1 x 28</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT76"><table class="tooltip"><tr><th>Size</th><td>1 x 26</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT77"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT78"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT79"><table class="tooltip"><tr><th>Size</th><td>1 x 22</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT80"><table class="tooltip"><tr><th>Size</th><td>1 x 128</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT81"><table class="tooltip"><tr><th>Size</th><td>1 x 128</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="V1"><table class="tooltip"><tr><th>Value</th><td>192.168.10.3</br></td></tr></table></div>
+<div class="tooltip" id="V2"><table class="tooltip"><tr><th>Value</th><td>IPAddress</br></td></tr></table></div>
+<div class="tooltip" id="V3"><table class="tooltip"><tr><th>Value</th><td>[1x12 uint8]</td></tr></table></div>
+<div class="tooltip" id="V4"><table class="tooltip"><tr><th>Value</th><td>        1408</br></td></tr></table></div>
+<div class="tooltip" id="V5"><table class="tooltip"><tr><th>Value</th><td>    DPortDTypeCDouble</br></td></tr></table></div>
+<div class="tooltip" id="V6"><table class="tooltip"><tr><th>Value</th><td>     0</br></td></tr></table></div>
+<div class="tooltip" id="V7"><table class="tooltip"><tr><th>Value</th><td>     0</br></td></tr></table></div>
+<div class="tooltip" id="V8"><table class="tooltip"><tr><th>Value</th><td>   100000000</br></td></tr></table></div>
+<div class="tooltip" id="V9"><table class="tooltip"><tr><th>Value</th><td>     1</br></td></tr></table></div>
+<div class="tooltip" id="V10"><table class="tooltip"><tr><th>Value</th><td>openDataConnection</br></td></tr></table></div>
+<div class="tooltip" id="V11"><table class="tooltip"><tr><th>Value</th><td>closeDataConnection</br></td></tr></table></div>
+<div class="tooltip" id="V12"><table class="tooltip"><tr><th>Value</th><td>    Error</br></td></tr></table></div>
+<div class="tooltip" id="V13"><table class="tooltip"><tr><th>Value</th><td>getSDRuDriverVersion</br></td></tr></table></div>
+<div class="tooltip" id="V14"><table class="tooltip"><tr><th>Value</th><td>     1</br></td></tr></table></div>
+<div class="tooltip" id="V15"><table class="tooltip"><tr><th>Value</th><td>N200/N210/USRP2</br></td></tr></table></div>
+<div class="tooltip" id="V16"><table class="tooltip"><tr><th>Value</th><td>bdroz-OptiPlex-980</br></td></tr></table></div>
+</div>
+</div>
+<!-- End Tooltips -->
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="messages"><span>All Messages (19)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel hidden">
+<table cellpadding="1" cellspacing="4">
+<tr><td>MATLAB code generation attempted on:</td><td>16-Nov-2015 17:45:01</td></tr>
+<tr><td>Coding target:</td><td>C MEX Function</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">19</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of notices:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: web('http://www.customersat3.com/TakeSurvey.asp?si=ELu7GTnTYtk%3D','-browser');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel">
+<table class="grid" summary="This table lists the messages produced during code generation." cellspacing="0" cellpadding="6">
+<thead>
+<tr>
+<th id="msgorder" scope="col"><div class="d1"><div class="d2"><a href="#">Order</a></div></div></th>
+<th id="msgtype" scope="col"><div class="d1"><div class="d2"><a href="#">Type</a></div></div></th>
+<th id="function" scope="col"><div class="d1"><div class="d2"><a href="#">Function</a></div></div></th>
+<th id="location" scope="col"><div class="d1"><div class="d2"><a href="#">Line</a></div></div></th>
+<th id="text" scope="col"><div class="d1"><div class="d2"><a href="#">Description</a></div></div></th>
+</tr>
+</thead>
+<tbody onmouseover="messagesMouseOver(event);" onmouseout="messagesMouseOut(event);" onclick="messagesClick(event);"">
+<tr class="message error" id="M13F193">
+<td class="msgorder" headers="msgorder"><a href="#">1</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuReceiver_set.DecimationFactor</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Expected a scalar. Non-scalars are not supported in IF or WHILE statements, or with logical operators. Instead, use ALL to convert matrix logicals to their scalar equivalents.</div></td>
+</tr>
+<tr class="message error" id="M11F183">
+<td class="msgorder" headers="msgorder"><a href="#">2</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>pvParse &gt; 2</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Function call failed.</div></td>
+</tr>
+<tr class="message error" id="M12F183">
+<td class="msgorder" headers="msgorder"><a href="#">3</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>pvParse &gt; 2</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>varargin and varargout are not supported here.</div></td>
+</tr>
+<tr class="message error" id="M9F182">
+<td class="msgorder" headers="msgorder"><a href="#">4</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SystemProp_parseInputs</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Function call failed.</div></td>
+</tr>
+<tr class="message error" id="M10F182">
+<td class="msgorder" headers="msgorder"><a href="#">5</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SystemProp_parseInputs</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>varargin and varargout are not supported here.</div></td>
+</tr>
+<tr class="message error" id="M7F178">
+<td class="msgorder" headers="msgorder"><a href="#">6</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SystemProp_setProperties</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Function call failed.</div></td>
+</tr>
+<tr class="message error" id="M8F178">
+<td class="msgorder" headers="msgorder"><a href="#">7</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SystemProp_setProperties</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>varargin and varargout are not supported here.</div></td>
+</tr>
+<tr class="message error" id="M6F164">
+<td class="msgorder" headers="msgorder"><a href="#">8</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuBase_SDRuBase</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Function call failed.</div></td>
+</tr>
+<tr class="message error" id="M5F163">
+<td class="msgorder" headers="msgorder"><a href="#">9</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuReceiver_SDRuReceiver</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Function call failed.</div></td>
+</tr>
+<tr class="message error" id="M1F1">
+<td class="msgorder" headers="msgorder"><a href="#">10</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>transceive103_energy</div></td>
+<td class="location" headers="location"><div>11</div></td>
+<td class="text" headers="text"><div>Function call failed.</div></td>
+</tr>
+<tr class="message error" id="M2F1">
+<td class="msgorder" headers="msgorder"><a href="#">11</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>transceive103_energy</div></td>
+<td class="location" headers="location"><div>22</div></td>
+<td class="text" headers="text"><div>release method is reserved for System objects.</div></td>
+</tr>
+<tr class="message error" id="M3F1">
+<td class="msgorder" headers="msgorder"><a href="#">12</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>transceive103_energy</div></td>
+<td class="location" headers="location"><div>22</div></td>
+<td class="text" headers="text"><div>Function call failed.</div></td>
+</tr>
+<tr class="message error" id="M15F338">
+<td class="msgorder" headers="msgorder"><a href="#">13</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuTransmitter_stepImpl</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Undefined function or variable 'fc'. The first assignment to a local variable determines its class.</div></td>
+</tr>
+<tr class="message error" id="M16F338">
+<td class="msgorder" headers="msgorder"><a href="#">14</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuTransmitter_stepImpl</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Undefined function or variable 'underrun'. The first assignment to a local variable determines its class.</div></td>
+</tr>
+<tr class="message error" id="M17F338">
+<td class="msgorder" headers="msgorder"><a href="#">15</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuTransmitter_stepImpl</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Undefined function or variable 'errStatus'. The first assignment to a local variable determines its class.</div></td>
+</tr>
+<tr class="message error" id="M18F338">
+<td class="msgorder" headers="msgorder"><a href="#">16</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuTransmitter_stepImpl</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Undefined function or variable 'errMsg'. The first assignment to a local variable determines its class.</div></td>
+</tr>
+<tr class="message fatal" id="M19F338">
+<td class="msgorder" headers="msgorder"><a href="#">17</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SDRuTransmitter_stepImpl</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Error limit reached.  Suppressing further error messages.</div></td>
+</tr>
+<tr class="message fatal" id="M14F198">
+<td class="msgorder" headers="msgorder"><a href="#">18</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>SystemCore_step</div></td>
+<td class="location" headers="location"><div>1</div></td>
+<td class="text" headers="text"><div>Error limit reached.  Suppressing further error messages.</div></td>
+</tr>
+<tr class="message fatal" id="M4F1">
+<td class="msgorder" headers="msgorder"><a href="#">19</a></td>
+<td class="failed" headers="msgtype"></td>
+<td class="function" headers="function"><div>transceive103_energy</div></td>
+<td class="location" headers="location"><div>25</div></td>
+<td class="text" headers="text"><div>Error limit reached.  Suppressing further error messages.</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>

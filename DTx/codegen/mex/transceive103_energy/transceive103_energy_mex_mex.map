@@ -1,0 +1,13 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		transceive103_energy;
+		sdruroot;
+		setupsdru;
+		transceive103_energy_initialize;
+		transceive103_energy_terminate;
+		transceive103_energy_atexit;
+	local:
+		*;
+};
