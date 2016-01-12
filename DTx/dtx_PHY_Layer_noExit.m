@@ -207,7 +207,7 @@ end % IF ISEMPTY(HRT)
 % Initial MAC frame bodies have 2012 octets, or numPayloadBits bits
 if isempty(nbb),    nbb = uint32(numPayloadBits);        end
 % Initial MAC frames have 2024 octets, or numPayloadBits+96=16,192 bits
-if isempty(nmb),    nmb = nbb+uint32(numMacHdrBits+numFcsBits);       end
+if isempty(nmb),    nmb = nbb+uint32(numMacHdrBits+numFcsBits) + numSuperBits;       end
 % Initial PHY frames have 2048 octets, or 16192+192=numBits80211b bits
 if isempty(n8b),    n8b = nmb+uint32(numPhyHdrBits);      end
 % Small image takes 103,864/numPayloadBits=6 802.11b Frames
@@ -249,9 +249,9 @@ else
             % Recalculate MSDU/MAC frame body length from #remaining bits to send
             nbb = min((nib-cib), uint32(numPayloadBits));
             % Recalculate MPDU/MAC frame length from MSDU length
-            nmb = nbb + uint32(numMacHdrBits+numFcsBits);
+            nmb = nbb + uint32(numMacHdrBits+numFcsBits) + numSuperBits;%+ numSuperBits
             % Recalculate PPDU/802.11b frame length from MPDU length
-            n8b = nmb + uint32(numPhyHdrBits); %+ numSuperBits;
+            n8b = nmb + uint32(numPhyHdrBits);
             % Recalculate #PPDU samples from #PPDU bits
             n8s = n8b * uint32(spreadFactor);
             % Recalculate #USRP frames per 802.11b frame
