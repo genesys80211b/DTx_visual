@@ -9,7 +9,7 @@ global spreadFactor numPayloadBits numMpduBits numUsrpBits numMacHdrBits usrpFra
     numPayloadOctets
 
 % vm:  Verbose M    f.IPAddress(end-4:end)ode: Displays additional text describing DRx actions
-vm  = logical(true(1));
+vm  = logical(false(1));
 
 % adcRate: ADC Rate
 adcRate = 100e6; 
@@ -20,7 +20,7 @@ decFactor = 500;
 % txGain: Tranmitter Gain used in transceive()
 txGain = 30;
 % rxGain: Receiver Gain used in transceive()
-rxGain = 15;
+rxGain = 20;
 % Tx Center Frequency
 centerFreqTx = 1.284e9;
 % Rx Center Frequency
@@ -136,6 +136,6 @@ toa = uint32(3000);
 % choice: 1 for random binary data of length l, 2 for image selection
 choice = 2;
 % numPackets: number of desired packets, for choice 1
-numPackets = 5;
+numPackets = 7;
 % length of binary data, leave blank or 0 for choice 2
 l = numPayloadBits*numPackets;
