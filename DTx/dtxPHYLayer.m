@@ -47,7 +47,7 @@ tic;
 while ~fe
     smt = st/uint8(10);
     if (smt==uint8(11)) %prm.DTxStateEnergyDet
-        st = dtx_MAC_Layer(st,frt);
+        st = dtxMACLayer(st,frt);
         % st = uint8(121); %prm.DTxStateTransmitHeader (to work without the MAC layer)
     elseif (smt==uint8(12)) %prm.DTxStateTransmitDATA
         [d2s,f8t,fit] = dtx_2TransmitDATA(frt,ft);

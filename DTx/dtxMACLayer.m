@@ -27,7 +27,7 @@ trb = randi((2^(k))-1)*cMin;
 
 
 % hft: Function Handle to transceive() function for this IP Address
-trx = eval(sprintf('@transceive%3d_energy_mex',aip));
+trx = eval(sprintf('@transceive%3d_mex',aip));
 
 if (st==uint8(111))
     
