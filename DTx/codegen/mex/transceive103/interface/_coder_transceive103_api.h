@@ -27,7 +27,7 @@
 
 /* Function Declarations */
 extern void transceive103_api(transceive103StackData *SD, const mxArray * const
-  prhs[8], const mxArray *plhs[2]);
+  prhs[9], const mxArray *plhs[2]);
 
 #endif
 

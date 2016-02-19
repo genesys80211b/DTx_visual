@@ -18,7 +18,7 @@
 static emlrtMCInfo e_emlrtMCI = { 20, 5, "error",
   "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/lang/error.m" };
 
-static emlrtRSInfo bb_emlrtRSI = { 20, "error",
+static emlrtRSInfo db_emlrtRSI = { 20, "error",
   "/usr/local/MATLAB/R2015b/toolbox/eml/lib/matlab/lang/error.m" };
 
 /* Function Declarations */
@@ -74,7 +74,7 @@ void b_error(const emlrtStack *sp, const char_T varargin_2_data[], const int32_T
   m6 = emlrtCreateCharArray(2, u_size);
   emlrtInitCharArrayR2013a(sp, u_size[1], m6, &u_data[0]);
   emlrtAssign(&b_y, m6);
-  st.site = &bb_emlrtRSI;
+  st.site = &db_emlrtRSI;
   c_error(&st, y, b_y, &e_emlrtMCI);
 }
 
@@ -118,7 +118,7 @@ void error(const emlrtStack *sp, const char_T varargin_2_data[], const int32_T
   m5 = emlrtCreateCharArray(2, u_size);
   emlrtInitCharArrayR2013a(sp, u_size[1], m5, &u_data[0]);
   emlrtAssign(&b_y, m5);
-  st.site = &bb_emlrtRSI;
+  st.site = &db_emlrtRSI;
   c_error(&st, y, b_y, &e_emlrtMCI);
 }
 

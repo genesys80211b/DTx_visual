@@ -23,7 +23,7 @@ static emlrtMCInfo b_emlrtMCI = { 14, 9, "warning",
   "/usr/local/MATLAB/R2015b/toolbox/shared/coder/coder/+coder/+internal/warning.m"
 };
 
-static emlrtRSInfo db_emlrtRSI = { 14, "warning",
+static emlrtRSInfo fb_emlrtRSI = { 14, "warning",
   "/usr/local/MATLAB/R2015b/toolbox/shared/coder/coder/+coder/+internal/warning.m"
 };
 
@@ -117,7 +117,7 @@ void b_warning(const emlrtStack *sp)
   m1 = emlrtCreateCharArray(2, iv7);
   emlrtInitCharArrayR2013a(sp, 39, m1, &c_u[0]);
   emlrtAssign(&c_y, m1);
-  st.site = &db_emlrtRSI;
+  st.site = &fb_emlrtRSI;
   b_feval(&st, y, feval(&st, b_y, c_y, &emlrtMCI), &b_emlrtMCI);
 }
 
@@ -188,7 +188,7 @@ void c_warning(const emlrtStack *sp, const char_T varargin_1_data[], const
   m8 = emlrtCreateCharArray(2, u_size);
   emlrtInitCharArrayR2013a(sp, u_size[1], m8, &u_data[0]);
   emlrtAssign(&d_y, m8);
-  st.site = &db_emlrtRSI;
+  st.site = &fb_emlrtRSI;
   b_feval(&st, y, c_feval(&st, b_y, c_y, d_y, &emlrtMCI), &b_emlrtMCI);
 }
 
@@ -244,7 +244,7 @@ void warning(const emlrtStack *sp)
   m0 = emlrtCreateCharArray(2, iv2);
   emlrtInitCharArrayR2013a(sp, 43, m0, &c_u[0]);
   emlrtAssign(&c_y, m0);
-  st.site = &db_emlrtRSI;
+  st.site = &fb_emlrtRSI;
   b_feval(&st, y, feval(&st, b_y, c_y, &emlrtMCI), &b_emlrtMCI);
 }
 

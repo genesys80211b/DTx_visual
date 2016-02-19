@@ -12,6 +12,7 @@
 /* Include files */
 #include "rt_nonfinite.h"
 #include "transceive103.h"
+#include "SDRuBase.h"
 #include "SystemCore.h"
 #include "SDRuReceiver.h"
 #include "SDRuTransmitter.h"
@@ -23,22 +24,28 @@ static boolean_T hrx_not_empty;
 static comm_SDRuTransmitter htx;
 static boolean_T htx_not_empty;
 static emlrtRSInfo emlrtRSI = { 6, "transceive103",
-  "/usr/local/MATLAB/V40_experiments/dtx/transceive103.m" };
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
 
 static emlrtRSInfo b_emlrtRSI = { 11, "transceive103",
-  "/usr/local/MATLAB/V40_experiments/dtx/transceive103.m" };
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
 
-static emlrtRSInfo c_emlrtRSI = { 17, "transceive103",
-  "/usr/local/MATLAB/V40_experiments/dtx/transceive103.m" };
+static emlrtRSInfo c_emlrtRSI = { 21, "transceive103",
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
 
-static emlrtRSInfo d_emlrtRSI = { 18, "transceive103",
-  "/usr/local/MATLAB/V40_experiments/dtx/transceive103.m" };
+static emlrtRSInfo d_emlrtRSI = { 23, "transceive103",
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
 
-static emlrtRSInfo e_emlrtRSI = { 20, "transceive103",
-  "/usr/local/MATLAB/V40_experiments/dtx/transceive103.m" };
+static emlrtRSInfo e_emlrtRSI = { 28, "transceive103",
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
 
-static emlrtRSInfo f_emlrtRSI = { 22, "transceive103",
-  "/usr/local/MATLAB/V40_experiments/dtx/transceive103.m" };
+static emlrtRSInfo f_emlrtRSI = { 29, "transceive103",
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
+
+static emlrtRSInfo g_emlrtRSI = { 31, "transceive103",
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
+
+static emlrtRSInfo h_emlrtRSI = { 33, "transceive103",
+  "/usr/local/MATLAB/DTx_visual/DTx/transceive103.m" };
 
 /* Function Definitions */
 void hrx_not_empty_init(void)
@@ -54,7 +61,7 @@ void htx_not_empty_init(void)
 void transceive103(transceive103StackData *SD, const emlrtStack *sp, const
                    creal_T d2s[1408], boolean_T ft, real_T txGain, real_T rxGain,
                    real_T centerFreqTx, real_T centerFreqRx, real_T intFactor,
-                   real_T decFactor, creal_T dr[1408], uint32_T *ns)
+                   real_T decFactor, real_T flag, creal_T dr[1408], uint32_T *ns)
 {
   emlrtStack st;
   st.prev = sp;
@@ -73,16 +80,28 @@ void transceive103(transceive103StackData *SD, const emlrtStack *sp, const
     hrx_not_empty = true;
   }
 
+  /* listening mode: */
+  if (muDoubleScalarAbs(centerFreqTx - centerFreqRx) > 0.0) {
+    /* if Rx and Tx is different, switch for Listening mode */
+    if (flag != 0.0) {
+      st.site = &c_emlrtRSI;
+      SDRuBase_set_CenterFrequency(&hrx, centerFreqTx);
+    } else {
+      st.site = &d_emlrtRSI;
+      SDRuBase_set_CenterFrequency(&hrx, centerFreqRx);
+    }
+  }
+
   if (ft) {
-    st.site = &c_emlrtRSI;
+    st.site = &e_emlrtRSI;
     SystemCore_release(&st, &hrx);
-    st.site = &d_emlrtRSI;
+    st.site = &f_emlrtRSI;
     b_SystemCore_release(&st, &htx);
   } else {
-    st.site = &e_emlrtRSI;
+    st.site = &g_emlrtRSI;
     SystemCore_step(&st, &htx, d2s);
     while (*ns < 1U) {
-      st.site = &f_emlrtRSI;
+      st.site = &h_emlrtRSI;
       b_SystemCore_step(SD, &st, &hrx, dr, ns);
       if (*emlrtBreakCheckR2012bFlagVar != 0) {
         emlrtBreakCheckR2012b(sp);

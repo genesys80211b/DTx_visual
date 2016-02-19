@@ -18,7 +18,7 @@
 #include "transceive103_data.h"
 
 /* Variable Definitions */
-static emlrtRSInfo x_emlrtRSI = { 9, "sendComplexDoubleData",
+static emlrtRSInfo ab_emlrtRSI = { 9, "sendComplexDoubleData",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/sendComplexDoubleData."
   "m" };
 
@@ -52,7 +52,7 @@ void sendComplexDoubleData(const emlrtStack *sp, int32_T driverApiH, const
   /*  bug: must pass as top-level arg */
   /*  dportDtype = DataPortDataTypeCapiEnumT.DPortDTypeCDouble; */
   /*    Copyright 2011-2012 The MathWorks, Inc. */
-  st.site = &x_emlrtRSI;
+  st.site = &ab_emlrtRSI;
 
   /*  */
   /*  This function unifies handling of interp vs. codegen call as well as */
@@ -68,7 +68,7 @@ void sendComplexDoubleData(const emlrtStack *sp, int32_T driverApiH, const
     m4 = emlrtCreateCharArray(2, iv11);
     emlrtInitCharArrayR2013a(&st, 6, m4, &u[0]);
     emlrtAssign(&y, m4);
-    b_st.site = &cb_emlrtRSI;
+    b_st.site = &eb_emlrtRSI;
     setupsdru(&b_st, sdruroot(&b_st, &c_emlrtMCI), y, &d_emlrtMCI);
     isSetupsdruCalled = true;
   }
