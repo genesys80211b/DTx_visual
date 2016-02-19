@@ -1,4 +1,4 @@
-function [dr,ns] = transceive103_energy(d2s,ft,txGain,rxGain,centerFreqTx,centerFreqRx,intFactor,decFactor,flag)
+function [dr,ns] = transceive103(d2s,ft,txGain,rxGain,centerFreqTx,centerFreqRx,intFactor,decFactor,flag)
 persistent hrx htx; 
 dr = complex(zeros(1408,1));
 ns = uint32(0);

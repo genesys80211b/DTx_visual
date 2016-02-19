@@ -1,11 +1,11 @@
-   function dtx_Link_Layer_visual()
+function dtxPHYLayer()
 initParameters;
 
 % Designated Receiver Parameter Structure
 %prm = init_v35();
 % aip: IP Address for USRP attached to this machine as a 3-Digit uint8
 %      (as of 2/19/15, valid values for N210's in Lab are 102, 103, or 202)
-global aip packet_number
+global aip
 aip = getipa();
 % c8f: Count of the Number of 802.11b Frames Sent
 c8f = uint8(1);
@@ -41,7 +41,7 @@ swapFreqFlag = 0;
 h=msgbox(['Welcome to the 3-Node Demo!'],'Sending image of Darth Vader..');
             set(findobj(h,'style','pushbutton'),'Visible','off')
 % hft: Function Handle to transceive() function for this IP Address
-trx = eval(sprintf('@transceive%3d_energy_mex',aip));
+trx = eval(sprintf('@transceive%3d_mex',aip));
 
 tic;
 while ~fe
@@ -130,7 +130,7 @@ trx(db,ft,txGain,rxGain,centerFreqTx,centerFreqRx,intFactor,decFactor,swapFreqFl
 dtx_2TransmitDATA(frt,ft);
 dtx_3ReceiveACK(df,ft,st);
 clear('ddd','dtx_2TransmitDATA','dtx_3ReceiveACK','preambleDet','rffe','sms');
-clear(sprintf('transceive%3d_energy_mex',aip));
+clear(sprintf('transceive%3d_mex',aip));
 return;
 end % End Function DTX_V35
 
@@ -146,7 +146,7 @@ function [d2s,f8t,fit] = dtx_2TransmitDATA(frt,ft)
 % Setting global variables
 global usrpFrameLength numBits80211b halfSuperSamples80211b halfUsrpFrameLength numPayloadBits choice l ...
     numSuperFrameBits numMacHdrBits numSuperBits numFcsBits numPhyHdrBits ...
-    spreadFactor packets_sent packet_array packet_number aip
+    spreadFactor packet_number aip
 
 %determine addressTx for RA in ACK frame
 addressTxStr = num2str(aip);
@@ -359,8 +359,8 @@ function [faf,dfl,flg,nrb,rbs,st] = dtx_3ReceiveACK(df,ft,st)
 
 % Setting global variables
 global halfUsrpFrameLength numUsrpBits doubleUsrpFrameLength ...
-    numMpduBits numMacHdrBits numFcsBits numSuperBits numSuperFrameBits aip ...
-    syncnum retransmit_counter vm
+    numMpduBits numMacHdrBits numSuperBits aip ...
+    syncnum vm
 
 % Persistent Data: Maintained between function calls to drx_1ReceiveData
 % chf: Header Frame Count: Counts #USRP frames that have header info (0-2)
@@ -386,7 +386,6 @@ persistent npf;
 persistent rb;
 
 %address persistent
-persistent addressRx;
 persistent addressTx;
 
 faf=logical(false(1));

@@ -1,4 +1,4 @@
-function st = dtx_MAC_Layer(st,frt)
+function st = dtxMACLayer(st,frt)
 % DTX_MAC_Layer Wait DIFS between rx of ACK and tx of next DATA frame
 % persistent cd;
 % persistent nd;
