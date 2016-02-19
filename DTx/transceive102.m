@@ -1,4 +1,4 @@
-function [dr,ns] = transceive102(d2s,ft,txGain,rxGain,centerFreqTx,centerFreqRx,intFactor,decFactor,swapFreqFlag)
+function [dr,ns] = transceive102(d2s, ft,txGain,rxGain,centerFreqTx,centerFreqRx,intFactor,decFactor,swapFreqFlag)
 persistent hrx htx; 
 dr = complex(zeros(1408,1));
 ns = uint32(0);

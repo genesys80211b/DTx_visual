@@ -17,7 +17,7 @@
 #include "transceive103_data.h"
 
 /* Variable Definitions */
-static emlrtRSInfo y_emlrtRSI = { 7, "receiveData",
+static emlrtRSInfo bb_emlrtRSI = { 7, "receiveData",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/receiveData.m"
 };
 
@@ -60,7 +60,7 @@ void receiveData(const emlrtStack *sp, int32_T driverApiH, const real_T freq[2],
   b_st.tls = st.tls;
 
   /*    Copyright 2011-2015 The MathWorks, Inc. */
-  st.site = &y_emlrtRSI;
+  st.site = &bb_emlrtRSI;
 
   /*  */
   /*  This function unifies handling of interp vs. codegen call as well as */
@@ -68,7 +68,7 @@ void receiveData(const emlrtStack *sp, int32_T driverApiH, const real_T freq[2],
   /*  */
   /*    Copyright 2011-2015 The MathWorks, Inc. */
   if (!isSetupsdruCalled) {
-    b_st.site = &cb_emlrtRSI;
+    b_st.site = &eb_emlrtRSI;
     setupsdru(&b_st, sdruroot(&b_st, &c_emlrtMCI), emlrt_marshallOut(&b_st, cv20),
               &d_emlrtMCI);
     isSetupsdruCalled = true;

@@ -18,7 +18,7 @@
 #include "transceive103_data.h"
 
 /* Variable Definitions */
-static emlrtRSInfo ab_emlrtRSI = { 6, "reportDrivers",
+static emlrtRSInfo cb_emlrtRSI = { 6, "reportDrivers",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/usrp_uhd_mapi/reportDrivers.m"
 };
 
@@ -50,7 +50,7 @@ void reportDrivers(const emlrtStack *sp, char_T flatAddrList_data[], int32_T
   b_st.tls = st.tls;
 
   /*    Copyright 2011-2012 The MathWorks, Inc. */
-  st.site = &ab_emlrtRSI;
+  st.site = &cb_emlrtRSI;
 
   /*  */
   /*  This function unifies handling of interp vs. codegen call as well as */
@@ -66,7 +66,7 @@ void reportDrivers(const emlrtStack *sp, char_T flatAddrList_data[], int32_T
     m7 = emlrtCreateCharArray(2, iv14);
     emlrtInitCharArrayR2013a(&st, 6, m7, &u[0]);
     emlrtAssign(&y, m7);
-    b_st.site = &cb_emlrtRSI;
+    b_st.site = &eb_emlrtRSI;
     setupsdru(&b_st, sdruroot(&b_st, &c_emlrtMCI), y, &d_emlrtMCI);
     isSetupsdruCalled = true;
   }

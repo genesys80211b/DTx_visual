@@ -158,7 +158,7 @@ static real_T i_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src, const
   return ret;
 }
 
-void transceive103_api(transceive103StackData *SD, const mxArray * const prhs[8],
+void transceive103_api(transceive103StackData *SD, const mxArray * const prhs[9],
   const mxArray *plhs[2])
 {
   creal_T d2s[1408];
@@ -169,6 +169,7 @@ void transceive103_api(transceive103StackData *SD, const mxArray * const prhs[8]
   real_T centerFreqRx;
   real_T intFactor;
   real_T decFactor;
+  real_T flag;
   uint32_T ns;
   creal_T dr[1408];
   emlrtStack st = { NULL, NULL, NULL };
@@ -184,10 +185,11 @@ void transceive103_api(transceive103StackData *SD, const mxArray * const prhs[8]
   centerFreqRx = e_emlrt_marshallIn(&st, emlrtAliasP(prhs[5]), "centerFreqRx");
   intFactor = e_emlrt_marshallIn(&st, emlrtAliasP(prhs[6]), "intFactor");
   decFactor = e_emlrt_marshallIn(&st, emlrtAliasP(prhs[7]), "decFactor");
+  flag = e_emlrt_marshallIn(&st, emlrtAliasP(prhs[8]), "flag");
 
   /* Invoke the target function */
   transceive103(SD, &st, d2s, ft, txGain, rxGain, centerFreqTx, centerFreqRx,
-                intFactor, decFactor, dr, &ns);
+                intFactor, decFactor, flag, dr, &ns);
 
   /* Marshall function outputs */
   plhs[0] = d_emlrt_marshallOut(&st, dr);

@@ -15,19 +15,19 @@
 #include "checkIPAddressFormat.h"
 
 /* Variable Definitions */
-static emlrtRSInfo o_emlrtRSI = { 43, "checkIPAddressFormat",
+static emlrtRSInfo q_emlrtRSI = { 43, "checkIPAddressFormat",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m"
 };
 
-static emlrtRSInfo p_emlrtRSI = { 44, "checkIPAddressFormat",
+static emlrtRSInfo r_emlrtRSI = { 44, "checkIPAddressFormat",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m"
 };
 
-static emlrtRSInfo q_emlrtRSI = { 45, "checkIPAddressFormat",
+static emlrtRSInfo s_emlrtRSI = { 45, "checkIPAddressFormat",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m"
 };
 
-static emlrtRSInfo r_emlrtRSI = { 46, "checkIPAddressFormat",
+static emlrtRSInfo t_emlrtRSI = { 46, "checkIPAddressFormat",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/checkIPAddressFormat.m"
 };
 
@@ -305,7 +305,7 @@ void checkIPAddressFormat(const emlrtStack *sp)
     tmp_data[i8] = cv4[i8];
   }
 
-  st.site = &o_emlrtRSI;
+  st.site = &q_emlrtRSI;
   checkNumeric(&st, tmp_data, tmp_size);
   b_tmp_size[0] = 1;
   b_tmp_size[1] = ii - i2;
@@ -314,7 +314,7 @@ void checkIPAddressFormat(const emlrtStack *sp)
     tmp_data[ii] = cv4[i2 + ii];
   }
 
-  st.site = &p_emlrtRSI;
+  st.site = &r_emlrtRSI;
   checkNumeric(&st, tmp_data, b_tmp_size);
   c_tmp_size[0] = 1;
   c_tmp_size[1] = i5 - idx;
@@ -323,7 +323,7 @@ void checkIPAddressFormat(const emlrtStack *sp)
     tmp_data[i2] = cv4[idx + i2];
   }
 
-  st.site = &q_emlrtRSI;
+  st.site = &s_emlrtRSI;
   checkNumeric(&st, tmp_data, c_tmp_size);
   d_tmp_size[0] = 1;
   d_tmp_size[1] = i7 - i6;
@@ -332,7 +332,7 @@ void checkIPAddressFormat(const emlrtStack *sp)
     b_tmp_data[i2] = cv4[(i6 + i2) - 1];
   }
 
-  st.site = &r_emlrtRSI;
+  st.site = &t_emlrtRSI;
   checkNumeric(&st, b_tmp_data, d_tmp_size);
 }
 

@@ -22,14 +22,14 @@ static transceive103StackData *transceive103StackDataGlobal = NULL;
 
 /* Function Declarations */
 static void transceive103_mexFunction(transceive103StackData *SD, int32_T nlhs,
-  mxArray *plhs[2], int32_T nrhs, const mxArray *prhs[8]);
+  mxArray *plhs[2], int32_T nrhs, const mxArray *prhs[9]);
 
 /* Function Definitions */
 static void transceive103_mexFunction(transceive103StackData *SD, int32_T nlhs,
-  mxArray *plhs[2], int32_T nrhs, const mxArray *prhs[8])
+  mxArray *plhs[2], int32_T nrhs, const mxArray *prhs[9])
 {
   int32_T n;
-  const mxArray *inputs[8];
+  const mxArray *inputs[9];
   const mxArray *outputs[2];
   int32_T b_nlhs;
   emlrtStack st = { NULL, NULL, NULL };
@@ -37,8 +37,8 @@ static void transceive103_mexFunction(transceive103StackData *SD, int32_T nlhs,
   st.tls = emlrtRootTLSGlobal;
 
   /* Check for proper number of arguments. */
-  if (nrhs != 8) {
-    emlrtErrMsgIdAndTxt(&st, "EMLRT:runTime:WrongNumberOfInputs", 5, 12, 8, 4,
+  if (nrhs != 9) {
+    emlrtErrMsgIdAndTxt(&st, "EMLRT:runTime:WrongNumberOfInputs", 5, 12, 9, 4,
                         13, "transceive103");
   }
 

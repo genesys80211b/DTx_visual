@@ -50,7 +50,7 @@ void b_mapiPrivate(const emlrtStack *sp, int32_T varargin_1, UsrpErrorCapiEnumT 
     m3 = emlrtCreateCharArray(2, iv10);
     emlrtInitCharArrayR2013a(sp, 6, m3, &u[0]);
     emlrtAssign(&y, m3);
-    st.site = &cb_emlrtRSI;
+    st.site = &eb_emlrtRSI;
     setupsdru(&st, sdruroot(&st, &c_emlrtMCI), y, &d_emlrtMCI);
     isSetupsdruCalled = true;
   }
@@ -125,7 +125,7 @@ void mapiPrivate(const emlrtStack *sp, const uint8_T varargin_1[12],
     m2 = emlrtCreateCharArray(2, iv9);
     emlrtInitCharArrayR2013a(sp, 6, m2, &u[0]);
     emlrtAssign(&y, m2);
-    st.site = &cb_emlrtRSI;
+    st.site = &eb_emlrtRSI;
     setupsdru(&st, sdruroot(&st, &c_emlrtMCI), y, &d_emlrtMCI);
     isSetupsdruCalled = true;
   }

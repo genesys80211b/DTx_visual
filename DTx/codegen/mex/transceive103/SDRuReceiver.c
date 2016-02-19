@@ -22,7 +22,7 @@
 #include "transceive103_data.h"
 
 /* Variable Definitions */
-static emlrtRSInfo u_emlrtRSI = { 1, "SDRuReceiver",
+static emlrtRSInfo w_emlrtRSI = { 1, "SDRuReceiver",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuReceiver.p"
 };
 
@@ -58,26 +58,26 @@ comm_SDRuReceiver *SDRuReceiver_SDRuReceiver(const emlrtStack *sp,
   f_st.prev = &e_st;
   f_st.tls = e_st.tls;
   b_obj = obj;
-  st.site = &u_emlrtRSI;
+  st.site = &w_emlrtRSI;
   c_obj = b_obj;
   c_obj->LocalOscillatorOffset = 0.0;
   c_obj->pSubDevice = RxId;
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &i_emlrtRSI;
-  d_st.site = &j_emlrtRSI;
-  c_st.site = &i_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &k_emlrtRSI;
+  d_st.site = &l_emlrtRSI;
+  c_st.site = &k_emlrtRSI;
   c_obj->isInitialized = 0;
-  d_st.site = &k_emlrtRSI;
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &l_emlrtRSI;
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &m_emlrtRSI;
+  d_st.site = &m_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &n_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &o_emlrtRSI;
   b_rand(varargin_1);
   for (k = 0; k < 10; k++) {
     varargin_1[k] = 48.0 + muDoubleScalarFloor(varargin_1[k] * 10.0);
   }
 
-  b_st.site = &h_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
   for (k = 0; k < 10; k++) {
     i10 = (int32_T)varargin_1[k];
     if (!((i10 >= 0) && (i10 <= 255))) {
@@ -104,22 +104,22 @@ comm_SDRuReceiver *SDRuReceiver_SDRuReceiver(const emlrtStack *sp,
     }
   }
 
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &j_emlrtRSI;
-  d_st.site = &j_emlrtRSI;
-  e_st.site = &n_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &l_emlrtRSI;
+  d_st.site = &l_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
   c_obj->CenterFrequency = varargin_2;
-  e_st.site = &n_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
   if (varargin_4 > 512.0) {
-    f_st.site = &u_emlrtRSI;
+    f_st.site = &w_emlrtRSI;
     b_warning(&f_st);
   }
 
   c_obj->DecimationFactor = varargin_4;
-  e_st.site = &n_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
   c_obj->Gain = varargin_8;
-  e_st.site = &n_emlrtRSI;
-  f_st.site = &h_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
+  f_st.site = &j_emlrtRSI;
   checkIPAddressFormat(&f_st);
   return b_obj;
 }
@@ -137,7 +137,7 @@ void SDRuReceiver_setupImplLocal(const emlrtStack *sp, comm_SDRuReceiver *obj,
   emlrtStack b_st;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &u_emlrtRSI;
+  st.site = &w_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   boardId = obj->pSubDevice;
@@ -146,7 +146,7 @@ void SDRuReceiver_setupImplLocal(const emlrtStack *sp, comm_SDRuReceiver *obj,
   }
 
   /*    Copyright 2011-2015 The MathWorks, Inc. */
-  b_st.site = &v_emlrtRSI;
+  b_st.site = &x_emlrtRSI;
   mapiPrivate(&b_st, uv1, boardId, requester, DPortDTypeCInt16, &i17,
               deviceStatus, errMsg_data, errMsg_size);
   obj->pDriverHandle = i17;
@@ -180,12 +180,12 @@ void SDRuReceiver_stepImpl(transceive103StackData *SD, const emlrtStack *sp,
   b_loOffset0[1] = loOffset0;
   b_gain0[0] = gain0;
   b_gain0[1] = gain0;
-  st.site = &u_emlrtRSI;
+  st.site = &w_emlrtRSI;
   receiveData(&st, obj->pDriverHandle, b_fc0, b_loOffset0, b_gain0, decim,
               SD->f0.yTemp, dataLen, &overrun, &errStatus, errMsg_data,
               errMsg_size);
   if (errStatus != UsrpDriverSuccess) {
-    st.site = &u_emlrtRSI;
+    st.site = &w_emlrtRSI;
     b_error(&st, errMsg_data, errMsg_size);
   }
 

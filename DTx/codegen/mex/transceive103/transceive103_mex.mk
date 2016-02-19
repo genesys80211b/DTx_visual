@@ -1,4 +1,4 @@
-START_DIR = /usr/local/MATLAB/V40_experiments/dtx
+START_DIR = /usr/local/MATLAB/DTx_visual/DTx
 
 MATLAB_ROOT = /usr/local/MATLAB/R2015b
 MAKEFILE = transceive103_mex.mk
@@ -13,6 +13,7 @@ SRC_FILES =  \
 	transceive103_terminate.c \
 	transceive103.c \
 	SDRuTransmitter.c \
+	SDRuBase.c \
 	SystemCore.c \
 	rand.c \
 	eml_rand.c \

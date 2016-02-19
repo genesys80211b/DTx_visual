@@ -22,7 +22,7 @@
 #include "transceive103_data.h"
 
 /* Variable Definitions */
-static emlrtRSInfo g_emlrtRSI = { 1, "SDRuTransmitter",
+static emlrtRSInfo i_emlrtRSI = { 1, "SDRuTransmitter",
   "/usr/local/MATLAB/R2015b/SupportPackages/R2015bPrerelease/usrpradio/toolbox/shared/sdr/sdru/+comm/SDRuTransmitter.p"
 };
 
@@ -58,25 +58,25 @@ comm_SDRuTransmitter *SDRuTransmitter_SDRuTransmitter(const emlrtStack *sp,
   f_st.prev = &e_st;
   f_st.tls = e_st.tls;
   b_obj = obj;
-  st.site = &g_emlrtRSI;
+  st.site = &i_emlrtRSI;
   c_obj = b_obj;
   c_obj->pSubDevice = TxId;
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &i_emlrtRSI;
-  d_st.site = &j_emlrtRSI;
-  c_st.site = &i_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &k_emlrtRSI;
+  d_st.site = &l_emlrtRSI;
+  c_st.site = &k_emlrtRSI;
   c_obj->isInitialized = 0;
-  d_st.site = &k_emlrtRSI;
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &l_emlrtRSI;
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &m_emlrtRSI;
+  d_st.site = &m_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &n_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &o_emlrtRSI;
   b_rand(varargin_1);
   for (k = 0; k < 10; k++) {
     varargin_1[k] = 48.0 + muDoubleScalarFloor(varargin_1[k] * 10.0);
   }
 
-  b_st.site = &h_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
   for (k = 0; k < 10; k++) {
     i0 = (int32_T)varargin_1[k];
     if (!((i0 >= 0) && (i0 <= 255))) {
@@ -103,24 +103,24 @@ comm_SDRuTransmitter *SDRuTransmitter_SDRuTransmitter(const emlrtStack *sp,
     }
   }
 
-  b_st.site = &h_emlrtRSI;
-  c_st.site = &j_emlrtRSI;
-  d_st.site = &j_emlrtRSI;
-  e_st.site = &n_emlrtRSI;
+  b_st.site = &j_emlrtRSI;
+  c_st.site = &l_emlrtRSI;
+  d_st.site = &l_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
   c_obj->CenterFrequency = varargin_2;
-  e_st.site = &n_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
   c_obj->Gain = varargin_4;
-  e_st.site = &n_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
   if (varargin_6 > 512.0) {
-    f_st.site = &g_emlrtRSI;
+    f_st.site = &i_emlrtRSI;
     warning(&f_st);
   }
 
   c_obj->InterpolationFactor = varargin_6;
-  e_st.site = &n_emlrtRSI;
-  f_st.site = &h_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
+  f_st.site = &j_emlrtRSI;
   checkIPAddressFormat(&f_st);
-  e_st.site = &n_emlrtRSI;
+  e_st.site = &p_emlrtRSI;
   c_obj->LocalOscillatorOffset = 0.0;
   return b_obj;
 }
@@ -139,7 +139,7 @@ void SDRuTransmitter_setupImplLocal(const emlrtStack *sp, comm_SDRuTransmitter
   emlrtStack b_st;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &g_emlrtRSI;
+  st.site = &i_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   boardId = obj->pSubDevice;
@@ -148,7 +148,7 @@ void SDRuTransmitter_setupImplLocal(const emlrtStack *sp, comm_SDRuTransmitter
   }
 
   /*    Copyright 2011-2015 The MathWorks, Inc. */
-  b_st.site = &v_emlrtRSI;
+  b_st.site = &x_emlrtRSI;
   mapiPrivate(&b_st, uv0, boardId, requester, DPortDTypeCDouble, &i12, errStatus,
               errMsg_data, errMsg_size);
   obj->pDriverHandle = i12;
@@ -181,11 +181,11 @@ void SDRuTransmitter_stepImpl(const emlrtStack *sp, const comm_SDRuTransmitter
   b_loOffset0[1] = loOffset0;
   b_gain0[0] = gain0;
   b_gain0[1] = gain0;
-  st.site = &g_emlrtRSI;
+  st.site = &i_emlrtRSI;
   sendComplexDoubleData(&st, obj->pDriverHandle, x, b_fc0, b_loOffset0, b_gain0,
                         interp, &underrun, &errStatus, errMsg_data, errMsg_size);
   if (errStatus != UsrpDriverSuccess) {
-    st.site = &g_emlrtRSI;
+    st.site = &i_emlrtRSI;
     error(&st, errMsg_data, errMsg_size);
   }
 }
